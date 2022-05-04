@@ -57,4 +57,4 @@ function Mahasiswa(nama, energi) {
     }
 }
 
-let anggi = new Mahasiswa ('anggi', 20);
+let anggi = new Mahasiswa ('anggi', 30);

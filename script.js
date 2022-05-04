@@ -39,7 +39,7 @@ const methodMahasiswa = {
 }
 
 function Mahasiswa(nama, energi) {
-    let mahasiswa = {} ;
+    let mahasiswa = Object.create(methodMahasiswa);
     mahasiswa.nama = nama;
     mahasiswa.energi = energi;
 
@@ -47,9 +47,11 @@ function Mahasiswa(nama, energi) {
 }
 
 let Anggi = Mahasiswa ('Anggi', 10); 
-let AdeWaliya = Mahasiswa ('Ade Waliya', 10);
 
- 
+ console.log(Anggi.tidur(5));
+ Anggi
+ console.log(Anggi.main(2));
+ Anggi
 
 // 3. construction function
 // keyword new

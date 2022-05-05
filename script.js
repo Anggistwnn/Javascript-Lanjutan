@@ -52,7 +52,10 @@ let Anggi = Mahasiswa ('Setiawan', 10);
  Anggi
  console.log(Anggi.main(2));
  Anggi
-
+console.log(Anggi.main(10));
+Anggi
+console.log(Anggi.tidur(30));
+Anggi
 // 3. construction function
 // keyword new
 

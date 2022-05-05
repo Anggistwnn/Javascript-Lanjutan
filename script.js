@@ -46,7 +46,7 @@ function Mahasiswa(nama, energi) {
     return mahasiswa;    
 }
 
-let Anggi = Mahasiswa ('Anggi', 10); 
+let Anggi = Mahasiswa ('Setiawan', 10); 
 
  console.log(Anggi.tidur(5));
  Anggi

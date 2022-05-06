@@ -57,35 +57,28 @@
 // console.log(Anggi.tidur(30));
 // Anggi
 
-
-function Mahasiswa(nama, energi) {
-    //let mahasiswa = Object.create(methodMahasiswa);
-    // let mahasiswa = {}
-    this.nama = nama;
-    this.energi = energi;
-}
-Mahasiswa.prototype.makan = function (porsi) {
-  this.energi += porsi;
-  return `Halo ${this.nama}, Selamat Makan!`;  
-}
-Mahasiswa.prototype.main = function (main) {
-    this.energi -= main;
-    return;
-}
-
-let Anggi = new Mahasiswa ('Anggi', 20);
-console.log(Anggi);
-console.log(Anggi.makan(3));
-console.log(Anggi);
-console.log(Anggi.main(2));
-console.log(Anggi);
+//membuat object menggunakan prototype inheriten
+// function Mahasiswa(nama, energi) {
+//     //let mahasiswa = Object.create(methodMahasiswa);
+//     // let mahasiswa = {}
+//     this.nama = nama;
+//     this.energi = energi;
+// }
+// Mahasiswa.prototype.makan = function (porsi) {
+//   this.energi += porsi;
+//   return `Halo ${this.nama}, Selamat Makan!`;  
+// }
+// Mahasiswa.prototype.main = function (main) {
+//     this.energi -= main;
+//     return `Halo ${this.nama}, Selamat Main!`;
+// }
+// Mahasiswa.prototype.tidur = function (jam) {
+//     this.energi += jam * 2;
+//     return `Halo ${this.nama}, Selamat tidur!`;
+// }
+// let Anggi = new Mahasiswa ('Anggi', 20);
 
 
-
-
-
-
-    
 
 
 

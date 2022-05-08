@@ -90,6 +90,12 @@ console.log(Anggi);
 console.log(Anggi.tidur(4));
 console.log(Anggi);
 
+// 2.1 execution context, hosting & scope
+
+var nama = 'Anggi';
+console.log(nama);
+
+
 
 
 

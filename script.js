@@ -90,21 +90,6 @@ console.log(Anggi);
 console.log(Anggi.tidur(4));
 console.log(Anggi);
 
-// 2.1 execution context, hosting & scope
-
-var nama = 'Anggi';
-console.log(nama);
-
-
-
-
-
-
-
-
-
-
-
 
 // 3. construction function
 // keyword new
@@ -125,3 +110,11 @@ console.log(nama);
 // }
 
 // let anggi = new Mahasiswa ('anggi', 30);
+
+
+// 2.1 execution context, hosting & scope 
+
+var nama = 'Anggi';
+console.log(nama);
+
+

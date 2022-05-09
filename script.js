@@ -129,16 +129,25 @@
 // () kurung buka dan tutup bertanda untuk mengeksekusi code program
 
 
-var nama = 'Anggistwnn';
-var umur = 33;
-console.log(sayhello());
+// var nama = 'Anggistwnn';
+// var umur = 33;
+// console.log(sayhello());
 
-function sayhello() {
-    return `Halo, nama ${nama}, saya ${umur} tahun.`
-}
+// function sayhello() {
+//     return `Halo, nama ${nama}, saya ${umur} tahun.`
+// }
 
 // function membuat local execution context
 // yang didalamnya terdapat creation dan execution phase
 // kita dapat mengakses window
 // dan kita juga dapat mengakses arguments yang bisa berisi parameter didalam functionn nya
 // dan terdapat juga hoisting  
+
+ var nama  =  'Anggi Setiawan';
+ var username = '@anggistwnn';
+
+ function cetakURL(username) {
+     var instagramURL = 'http://instagram.com/'
+     return instagramURL + username;
+ }
+ console.log(cetakURL(username));

@@ -117,4 +117,5 @@ console.log(Anggi);
 var nama = 'Anggi';
 console.log(nama);
 
+// creation phase pada global context
 

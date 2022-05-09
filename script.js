@@ -143,14 +143,15 @@
 // dan kita juga dapat mengakses arguments yang bisa berisi parameter didalam functionn nya
 // dan terdapat juga hoisting  
 
- var nama  =  'Anggi Setiawan';
- var username = '@anggistwnn';
+//  var nama  =  'Anggi Setiawan';
+//  var username = '@anggistwnn';
 
- function cetakURL() {
-     var instagramURL = 'http://instagram.com/'
-     return instagramURL + username;
- }
- console.log(cetakURL('@Adewaliya'));
+//  function cetakURL() {
+//      console.log(arguments[0]);
+//      var instagramURL = 'http://instagram.com/'
+//      return instagramURL + username;
+//  }
+//  console.log(cetakURL('@Adewaliya', '@Anggistwnn'));
 
 // function a() {
 //     console.log('ini a');
@@ -164,3 +165,19 @@
 //     b();
 // }
 // a();
+
+//  Latihan
+
+function satu() {
+    var nama = 'sandika';
+    console.log(nama);
+}
+
+function dua() {
+    console.log(nama);
+}
+console.log(nama);
+var nama = 'erik';
+satu();
+dua('doddy');
+console.log(nama);

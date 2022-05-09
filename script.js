@@ -121,7 +121,7 @@
 // creation phase pada global context
 // semua variable akan diisi dulu dengan undifine nama var = undefined
 // function itu diisi dgn isi dari string functionnya   nama function = fn()
-// diatas semua disebut dengan hoisting
+// hoisting sama dengna menarik bendera keatas  
 // js mendefinisikan window = global object
 // this = window
 
@@ -146,8 +146,21 @@
  var nama  =  'Anggi Setiawan';
  var username = '@anggistwnn';
 
- function cetakURL(username) {
+ function cetakURL() {
      var instagramURL = 'http://instagram.com/'
      return instagramURL + username;
  }
- console.log(cetakURL(username));
+ console.log(cetakURL('@Adewaliya'));
+
+// function a() {
+//     console.log('ini a');
+//     function b() {
+//         console.log('ini b');
+//         function c() {
+//             console.log('ini c');
+//         }
+//         c();
+//     }
+//     b();
+// }
+// a();

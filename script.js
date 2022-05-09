@@ -63,32 +63,32 @@
 //     
 
 // versi class = {}
-class Mahasiswa {
-    constructor (nama, energi){
-        this.nama = nama;
-        this.energi = energi;
-    }
+// class Mahasiswa {
+//     constructor (nama, energi){
+//         this.nama = nama;
+//         this.energi = energi;
+//     }
 
-makan(porsi) {
-this.energi += porsi;
-return `Halo ${this.nama}, Selamat Makan!`;  
-}
-main(main) {
-this.energi -= main;
-return `Halo ${this.nama}, Selamat Main!`;
-}
-tidur(jam) {
-this.energi += jam * 2;
-return `Halo ${this.nama}, Selamat tidur!`;
-}
-}
-let Anggi = new Mahasiswa ('Anggi', 20);
+// makan(porsi) {
+// this.energi += porsi;
+// return `Halo ${this.nama}, Selamat Makan!`;  
+// }
+// main(main) {
+// this.energi -= main;
+// return `Halo ${this.nama}, Selamat Main!`;
+// }
+// tidur(jam) {
+// this.energi += jam * 2;
+// return `Halo ${this.nama}, Selamat tidur!`;
+// }
+// }
+// let Anggi = new Mahasiswa ('Anggi', 20);
 
-console.log(Anggi);
-console.log(Anggi.main(10));
-console.log(Anggi);
-console.log(Anggi.tidur(4));
-console.log(Anggi);
+// console.log(Anggi);
+// console.log(Anggi.main(10));
+// console.log(Anggi);
+// console.log(Anggi.tidur(4));
+// console.log(Anggi);
 
 
 // 3. construction function
@@ -114,15 +114,31 @@ console.log(Anggi);
 
 // 2.1 execution context, hosting & scope 
 
-var nama = 'Anggi';
-console.log(nama);
-console.log();
+// var nama = 'Anggi';
+// console.log(nama);
+// console.log();
 
 // creation phase pada global context
 // semua variable akan diisi dulu dengan undifine nama var = undefined
-// nama function itu diisi dengan fungsinya sendiri   nama function = fn()
+// function itu diisi dgn isi dari string functionnya   nama function = fn()
 // diatas semua disebut dengan hoisting
 // js mendefinisikan window = global object
 // this = window
 
+// execution phase mengeksekusi programnya baris per baris
+// () kurung buka dan tutup bertanda untuk mengeksekusi code program
 
+
+var nama = 'Anggistwnn';
+var umur = 33;
+console.log(sayhello());
+
+function sayhello() {
+    return `Halo, nama ${nama}, saya ${umur} tahun.`
+}
+
+// function membuat local execution context
+// yang didalamnya terdapat creation dan execution phase
+// kita dapat mengakses window
+// dan kita juga dapat mengakses arguments yang bisa berisi parameter didalam functionn nya
+// dan terdapat juga hoisting  

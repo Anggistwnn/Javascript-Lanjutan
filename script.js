@@ -116,6 +116,13 @@ console.log(Anggi);
 
 var nama = 'Anggi';
 console.log(nama);
+console.log();
 
 // creation phase pada global context
+// semua variable akan diisi dulu dengan undifine nama var = undefined
+// nama function itu diisi dengan fungsinya sendiri   nama function = fn()
+// diatas semua disebut dengan hoisting
+// js mendefinisikan window = global object
+// this = window
+
 

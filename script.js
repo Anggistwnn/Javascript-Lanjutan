@@ -182,18 +182,33 @@
 // dua('doddy');
 // console.log(nama); 
 
-function  init () {
-    let nama  = 'Anggi';
-    // let umur  = 22;
-    return function tampilNama(nama) {
-        console.log(nama);
-        // console.log(umur);
-    }
-       
-}
-let panggilNama = init();
-panggilNama('Anggi');
 
+// closure
+// function  init () {
+//     let nama  = 'Anggi';
+//     // let umur  = 22;
+//     return function tampilNama(nama) {
+//         console.log(nama);
+//         // console.log(umur);
+//     }
+       
+// }
+// let panggilNama = init();
+// panggilNama('Anggi');
+
+
+ function ucapkanSalam(waktu) {
+     return function (nama) {
+         console.log(`Halo ${nama}, Selamat ${waktu},
+          semoga hari ini lebih baik dari hari kemarin!!`);
+     }
+ }
+
+let selamatPagi  = ucapkanSalam('Pagi')
+let selamatSiang  = ucapkanSalam('Siang')
+let selamatMalam  = ucapkanSalam('Malam')
+ 
+selamatPagi('Ade Waliyaa');
 
 
 

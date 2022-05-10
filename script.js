@@ -184,8 +184,10 @@
 
 function  init () {
     let nama  = 'Anggi';
+    let umur  = 22;
     function tampilNama() {
         console.log(nama);
+        console.log(umur);
     }
     tampilNama();
 }

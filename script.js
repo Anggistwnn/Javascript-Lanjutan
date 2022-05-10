@@ -168,16 +168,39 @@
 
 //  Latihan
 
-function satu() {
-    var nama = 'sandika';
-    console.log(nama);
-}
+// function satu() {
+//     var nama = 'sandika';
+//     console.log(nama);
+// }
 
-function dua() {
-    console.log(nama);
+// function dua() {
+//     console.log(nama);
+// }
+// console.log(nama);
+// var nama = 'erik';
+// satu();
+// dua('doddy');
+// console.log(nama); 
+
+function  init () {
+    let nama  = 'Anggi';
+    function tampilNama() {
+        console.log(nama);
+    }
+    tampilNama();
 }
-console.log(nama);
-var nama = 'erik';
-satu();
-dua('doddy');
-console.log(nama);
+init();
+
+
+
+
+
+
+
+
+
+
+
+
+
+

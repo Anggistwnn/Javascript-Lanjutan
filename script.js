@@ -185,15 +185,15 @@
 function  init () {
     let nama  = 'Anggi';
     // let umur  = 22;
-    function tampilNama(nama) {
+    return function tampilNama(nama) {
         console.log(nama);
         // console.log(umur);
     }
-        return tampilNama;
-    tampilNama();
+       
 }
 let panggilNama = init();
 panggilNama('Anggi');
+
 
 
 

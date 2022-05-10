@@ -185,7 +185,7 @@
 function  init () {
     let nama  = 'Anggi';
     // let umur  = 22;
-    function tampilNama() {
+    function tampilNama(nama) {
         console.log(nama);
         // console.log(umur);
     }
@@ -193,7 +193,7 @@ function  init () {
     tampilNama();
 }
 let panggilNama = init();
-panggilNama();
+panggilNama('Anggi');
 
 
 

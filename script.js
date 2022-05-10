@@ -212,10 +212,14 @@
 // selamatPagi('Ade Waliyaa');
 
 // membuat function yang mengetahui berapa kali iya diklik
-function  add() {
-    let counter =0;
-    return ++counter;  
-}
+let add = (function  add() {
+    let counter = 0;
+    return function () {
+         return ++counter;
+    };  
+})();
+
+
 
 counter = 100;
 console.log(add()) ;

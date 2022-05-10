@@ -196,23 +196,35 @@
 // let panggilNama = init();
 // panggilNama('Anggi');
 
+// faktori function membuat function sesuai dgn function yang lain
+//  function ucapkanSalam(waktu) {
+//      return function (nama) {
+//          console.log(`Halo
+//           ${nama}, Selamat ${waktu},
+//           semoga hari ini lebih baik dari hari kemarin!!`);
+//      }
+//  }
 
- function ucapkanSalam(waktu) {
-     return function (nama) {
-         console.log(`Halo ${nama}, Selamat ${waktu},
-          semoga hari ini lebih baik dari hari kemarin!!`);
-     }
- }
-
-let selamatPagi  = ucapkanSalam('Pagi')
-let selamatSiang  = ucapkanSalam('Siang')
-let selamatMalam  = ucapkanSalam('Malam')
+// let selamatPagi  = ucapkanSalam('Pagi')
+// let selamatSiang  = ucapkanSalam('Siang')
+// let selamatMalam  = ucapkanSalam('Malam')
  
-selamatPagi('Ade Waliyaa');
+// selamatPagi('Ade Waliyaa');
 
+// membuat function yang mengetahui berapa kali iya diklik
+function  add() {
+    let counter =0;
+    return ++counter;  
+}
 
-
-
+counter = 100;
+console.log(add()) ;
+console.log(add()) ;
+console.log(add()) ;
+console.log(add()) ;
+console.log(add()) ;
+console.log(add()) ;
+console.log(add()) ;
 
 
 

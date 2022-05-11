@@ -209,7 +209,8 @@
 // let selamatSiang  = ucapkanSalam('Siang')
 // let selamatMalam  = ucapkanSalam('Malam')
  
-// selamatPagi('Roudoh');
+// selamatPagi('Roudoh'); Astagfirullah ini gapap kok tadi ngelaggg wwlw
+
 
 // membuat function yang mengetahui berapa kali iya diklik
 // let add = (function  add() {
@@ -232,12 +233,15 @@
 
 // Perbedaan antar var, let, const
 
+// let i = 10;
+// console.log(i)
+
+for( var i = 0; i < 10; i++){
+    console.log(i);
+}
+
+
 console.log(i);
-let i = 10;
-
-
-
-
 
 
 

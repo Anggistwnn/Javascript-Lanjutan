@@ -209,26 +209,28 @@
 // let selamatSiang  = ucapkanSalam('Siang')
 // let selamatMalam  = ucapkanSalam('Malam')
  
-// selamatPagi('Ade Waliyaa');
+// selamatPagi('Roudoh');
 
 // membuat function yang mengetahui berapa kali iya diklik
-let add = (function  add() {
-    let counter = 0;
-    return function () {
-         return ++counter;
-    };  
-})();
+// let add = (function  add() {
+//     let counter = 0;
+//     return function () {
+//          return ++counter;
+//     };  
+// })();
 
 
 
-counter = 100;
-console.log(add()) ;
-console.log(add()) ;
-console.log(add()) ;
-console.log(add()) ;
-console.log(add()) ;
-console.log(add()) ;
-console.log(add()) ;
+// counter = 100;
+// console.log(add()) ;
+// console.log(add()) ;
+// console.log(add()) ;
+// console.log(add()) ;
+// console.log(add()) ;
+// console.log(add()) ;
+// console.log(add()) ;
+
+// Perbedaan antar var, let, const
 
 
 

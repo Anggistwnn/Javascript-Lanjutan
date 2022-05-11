@@ -232,7 +232,8 @@
 
 // Perbedaan antar var, let, const
 
-
+console.log(i);
+var i = 10;
 
 
 

@@ -266,5 +266,34 @@
 //    console.log(i);
 
 
+// const berguna saat kita tidak lagi inngin mengganti isi didalamnya dan gunakan let jik ingin melakukan pengulangan 
+// const meminimalisir perubahan state
+// const i = 10;
+//  i = 15;
+// console.log(i);
 
 
+// tidak dapat mengisi array baru
+
+// const i = [1,2,3]
+// i = [1,2,3,4];
+// console.log(i);
+
+// lakukan hal berikut ini 
+// const i = [1,2,3,4]
+// i.push(5);
+// console.log(i );
+
+
+// mencoba membuat object
+// const mhs =  {
+//     nama: "Anggi Setiawan",
+//     umur: 23
+// } 
+
+// mhs = {
+//     jurusan: "Teknik Informatika" 
+// }
+
+
+// console.log(mhs);

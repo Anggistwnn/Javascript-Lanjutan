@@ -236,18 +236,27 @@
 // let i = 10;
 // console.log(i)
 
-function Test() {
+// function Test() {
     
- for( var i = 0; i < 10; i++){
- 
-    console.log(i);
+//     for( var i = 0; i < 10; i++){
+        
+//         console.log(i);
+        
+//     }
+// }
 
-}
-}
+// Test();
+// console.log(i);
 
-Test();
+// self invoking annonimous function
+// berguna agar tidak terjadi bentrokan karna ada nama function yang samaa
+(function () { 
+ for (var i = 0; i < 10; i++){;
+    console.log(i); 
+ }
+}());
 console.log(i);
- 
+
 
 
 

@@ -250,12 +250,20 @@
 
 // self invoking annonimous function
 // berguna agar tidak terjadi bentrokan karna ada nama function yang samaa
-(function () { 
- for (var i = 0; i < 10; i++){;
-    console.log(i); 
- }
-}());
-console.log(i);
+// ini merupakan function scope
+// (function () { 
+//  for (let i = 0; i < 10; i++){;
+//     console.log(i); 
+//  }
+// }());
+// console.log(i);
+
+// ini merupakan block scope
+//     for (let i = 0; i < 10; i++){
+//        console.log(i); 
+//     };
+
+//    console.log(i);
 
 
 

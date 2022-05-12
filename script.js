@@ -236,14 +236,18 @@
 // let i = 10;
 // console.log(i)
 
-for( var i = 0; i < 10; i++){
+function Test() {
+    
+ for( var i = 0; i < 10; i++){
+ 
     console.log(i);
+
+}
 }
 
-
+Test();
 console.log(i);
-
-
+ 
 
 
 

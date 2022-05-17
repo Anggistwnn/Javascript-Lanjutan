@@ -348,7 +348,7 @@
 
 // MEMBUAT FUNCTION MAP PADA JS, UNTUK MEMATAKAN SEBUAT FUNCT KE DALAM ARRAY
 // function array biasa
-let mahasiswa = ['Anggi', 'Roudohh', 'AdeWaliyaa'];
+// let mahasiswa = ['Anggi', 'Roudohh', 'AdeWaliyaa'];
 
 // let jumlahHuruf = mahasiswa.map(function (nama) {
 //     return nama.length;
@@ -356,6 +356,20 @@ let mahasiswa = ['Anggi', 'Roudohh', 'AdeWaliyaa'];
 // console.log(jumlahHuruf);
 
 // code atas diubah menjadi arrow function
-let jumlahHuruf = mahasiswa.map (nama => ({nama, jumlahHuruf: nama.length}));
+// let jumlahHuruf = mahasiswa.map (nama => ({nama, jumlahHuruf: nama.length}));
 
-console.table(jumlahHuruf);
+// console.table(jumlahHuruf);
+// -------------------------------------------------------
+// Konsep This Pada Arrow Function
+
+// Constructor Function
+const Mahasiswa = function () {
+    this.nama = 'Anggi Setiawan';
+    this.umur = 23;
+    this.sayHello = function () {
+        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`
+        );
+    }
+} 
+
+const anggistwnn = new Mahasiswa();

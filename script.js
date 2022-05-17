@@ -348,7 +348,7 @@
 
 // MEMBUAT FUNCTION MAP PADA JS, UNTUK MEMATAKAN SEBUAT FUNCT KE DALAM ARRAY
 // function array biasa
-let mahasiswa = ['Anggi', 'Roudohh'];
+let mahasiswa = ['Anggi', 'Roudohh', 'AdeWaliyaa'];
 
 // let jumlahHuruf = mahasiswa.map(function (nama) {
 //     return nama.length;
@@ -356,6 +356,6 @@ let mahasiswa = ['Anggi', 'Roudohh'];
 // console.log(jumlahHuruf);
 
 // code atas diubah menjadi arrow function
-let jumlahHuruf = mahasiswa.map (nama => nama);
+let jumlahHuruf = mahasiswa.map (nama => ({nama, jumlahHuruf: nama.length}));
 
-console.log(jumlahHuruf);
+console.table(jumlahHuruf);

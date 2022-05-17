@@ -363,13 +363,35 @@
 // Konsep This Pada Arrow Function
 
 // Constructor Function
-const Mahasiswa = function () {
-    this.nama = 'Anggi Setiawan';
-    this.umur = 23;
-    this.sayHello = function () {
-        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`
-        );
-    }
-} 
+// const Mahasiswa = function () {
+//     this.nama = 'Anggi Setiawan';
+//     this.umur = 23;
+//     this.sayHello = function () {
+//         console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`
+//         );
+//     }
+// }  
+// const anggistwnn = new Mahasiswa();
 
-const anggistwnn = new Mahasiswa();
+// Arrow Function
+// tdk dapat sembarangan mengubah constructor funct menjadi arrow funct
+// const Mahasiswa = function ()  {
+//     this.nama = 'Anggi Setiawan';
+//     this.umur = 23;
+    // jika methodnya dapat diganti mjdi arrow function
+    // karna tdk menyimpan konteks this, jd iya akan mencari keluar dari methodnya
+//     this.sayHello =  () =>  {
+//         console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`
+//         );
+//     }
+// }  
+// const anggistwnn = new Mahasiswa();
+
+// Object Literal
+const mhs1 = {
+    nama: 'Anggi',
+    umur: 23,
+    sayHello:  () =>  {
+        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun. ` );
+    }
+}

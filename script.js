@@ -452,3 +452,11 @@ const mhs1 = {
 // tombol.addEventListener('click', function () {
 //     console.log('tombol ditekan!');
 // })
+
+let total = 0,
+    count = 1;
+while (count <= 6) {
+    total += count;
+    count += 1;
+}
+console.log(total);

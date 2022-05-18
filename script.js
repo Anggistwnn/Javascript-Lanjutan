@@ -391,7 +391,7 @@
 const mhs1 = {
     nama: 'Anggi',
     umur: 23,
-    sayHello:  () =>  {
+    sayHello: function ()   {
         console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun. ` );
     }
 }

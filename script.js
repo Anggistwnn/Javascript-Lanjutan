@@ -403,25 +403,36 @@ const mhs1 = {
 //     this.sayHello = function () {
 //         console.log(`Assalamualaikum, ${this.nama}, dan saya ${this.umur} tahun.`);
 //     }
-    
+
 //     setInterval(() => {
 //         console.log(this.umur++);
 //     }, 500);
-    
+
 // }
 //     const Anggistwnn = new Mahasiswa();
 
-const box = document.querySelector('.box');
-box.addEventListener('click', function () {
-    let satu = 'size';
-    let dua = 'caption';
+// const box = document.querySelector('.box');
+// box.addEventListener('click', function () {
+//     let satu = 'size';
+//     let dua = 'caption';
 
-    if(this.classList.contains(satu)){
-         [satu, dua] = [dua, satu];
-    }
+//     if(this.classList.contains(satu)){
+//          [satu, dua] = [dua, satu];
+//     }
 
-    this.classList.toggle(satu);
-    setTimeout( () => {
-    this.classList.toggle(dua);
-    }, 600);
-});
+//     this.classList.toggle(satu);
+//     setTimeout( () => {
+//     this.classList.toggle(dua);
+//     }, 600);
+// });
+
+function kerjakanTugas(matakuliah, selesai) {
+    console.log(`mulai mengerjakan tugas ${matakuliah}`);
+    selesai();
+}
+
+function selesai() {
+    alert('Selesai mengerjakan tugas!')
+
+}
+kerjakanTugas('Pemograman Web', selesai);

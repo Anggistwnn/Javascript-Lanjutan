@@ -426,13 +426,29 @@ const mhs1 = {
 //     }, 600);
 // });
 
-function kerjakanTugas(matakuliah, selesai) {
-    console.log(`mulai mengerjakan tugas ${matakuliah}`);
-    selesai();
-}
 
-function selesai() {
-    alert('Selesai mengerjakan tugas!')
+// HIGH ORDER FUCNTION
+// CONTOH 1
+// function kerjakanTugas(matakuliah, selesai) {
+//     console.log(`mulai mengerjakan tugas ${matakuliah}`);
+//     selesai();
+// }
 
-}
-kerjakanTugas('Pemograman Web', selesai);
+// function selesai() {
+//     alert('Selesai mengerjakan tugas!')
+
+// }
+// kerjakanTugas('Pemograman Web', selesai);
+
+// CONTOH 2
+// setTimeout(function () {
+
+//     console.log('hello world!');
+
+// }, 1000);
+
+// const tombol = document.querySelector('.box');
+
+// tombol.addEventListener('click', function () {
+//     console.log('tombol ditekan!');
+// })

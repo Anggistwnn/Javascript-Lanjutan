@@ -60,7 +60,7 @@
 // membuat object menggunakan prototype inheriten
 // function Mahasiswa(nama, energi) {
 //     //let mahasiswa = Object.create(methodMahasiswa);
-    
+
 
 // versi class = {}
 // class Mahasiswa {
@@ -191,7 +191,7 @@
 //         console.log(nama);
 //         // console.log(umur);
 //     }
-       
+
 // }
 // let panggilNama = init();
 // panggilNama('Anggi');
@@ -208,7 +208,7 @@
 // let selamatPagi  = ucapkanSalam('Pagi')
 // let selamatSiang  = ucapkanSalam('Siang')
 // let selamatMalam  = ucapkanSalam('Malam')
- 
+
 // selamatPagi('Roudoh'); Astagfirullah ini gapap kok tadi ngelaggg wwlw
 
 
@@ -237,11 +237,11 @@
 // console.log(i)
 
 // function Test() {
-    
+
 //     for( var i = 0; i < 10; i++){
-        
+
 //         console.log(i);
-        
+
 //     }
 // }
 
@@ -327,7 +327,7 @@
 // console.log(tampilNama('Anggi'));
 
 // dibawah ini merupakan contoh lain dari arrow funct
- 
+
 // const tampilNama = (nama) => {
 //     return `Halo, ${nama}`;
 // }
@@ -378,8 +378,8 @@
 // const Mahasiswa = function ()  {
 //     this.nama = 'Anggi Setiawan';
 //     this.umur = 23;
-    // jika methodnya dapat diganti mjdi arrow function
-    // karna tdk menyimpan konteks this, jd iya akan mencari keluar dari methodnya
+// jika methodnya dapat diganti mjdi arrow function
+// karna tdk menyimpan konteks this, jd iya akan mencari keluar dari methodnya
 //     this.sayHello =  () =>  {
 //         console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`
 //         );
@@ -391,7 +391,23 @@
 const mhs1 = {
     nama: 'Anggi',
     umur: 23,
-    sayHello: function ()   {
-        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun. ` );
+    sayHello: () => {
+        // console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun. ` );
+        console.log(this);
     }
 }
+
+// const Mahasiswa = function () {
+//     this.nama = 'Anggistwnn';
+//     this.umur = 23;
+//     this.sayHello = function () {
+//         console.log(`Assalamualaikum, ${this.nama}, dan saya ${this.umur} tahun.`);
+//     }
+    
+//     setInterval(() => {
+//         console.log(this.umur++);
+//     }, 500);
+    
+// }
+//     const Anggistwnn = new Mahasiswa();
+

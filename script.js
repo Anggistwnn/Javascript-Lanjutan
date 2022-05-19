@@ -465,13 +465,20 @@ const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
 // }
 // console.log(newAngka);
 
-// menggunakan filter
+// menggunakan FILTER
 // const newAngka = angka.filter((a) => {
 //     return a >= 3;
 // })
 // console.log(newAngka);
 
-// map
+// MAP
 // kalikan semua angka dengan 2
-const newAngka = angka.map(a => a + 2);
+// const newAngka = angka.map(a => a + 2);
+// console.log(newAngka);
+
+// REDUCE
+//  jumlahkan seluruh elemen pada Array
+// elemen array yang sedang dilooping currentvalue dan secara default ia memiliki nilai 0 (currentvalue, 0)
+// yang terjadi gini "-1 + 8 + 9 + 1 + 4 + -5 + -4 + 3 + 2 + 9"
+const newAngka = angka.reduce((accumulator, currentvalue) => accumulator + currentvalue, 5);
 console.log(newAngka);

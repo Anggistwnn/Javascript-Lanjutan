@@ -480,5 +480,14 @@ const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
 //  jumlahkan seluruh elemen pada Array
 // elemen array yang sedang dilooping currentvalue dan secara default ia memiliki nilai 0 (currentvalue, 0)
 // yang terjadi gini "-1 + 8 + 9 + 1 + 4 + -5 + -4 + 3 + 2 + 9"
-const newAngka = angka.reduce((accumulator, currentvalue) => accumulator + currentvalue, 5);
-console.log(newAngka);
+// const newAngka = angka.reduce((accumulator, currentvalue) => accumulator + currentvalue, 5);
+// console.log(newAngka);
+
+// METHOD CHAINING
+// mencari angka 5
+// dikalikan 3
+// menjumlahkan semua hasilnya
+const hasil = angka.filter(a => a > 5)
+    .map(a => a * 3)
+    .reduce((acc, cur) => acc + cur);
+console.log(hasil);

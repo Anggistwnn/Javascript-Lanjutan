@@ -492,3 +492,17 @@ const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
 //     .map(a => a * 3)
 //     .reduce((acc, cur) => acc + cur);
 // console.log(hasil);
+// ---------------------------------------------------------------
+// ambil semua elemen video
+
+// pilih hanya yang javascript lanjutan
+
+// ambil durasi masing-masing video
+
+// ubah durasi menjadi int, ubah menit menjadi detik
+
+// jumlahkan semua detik
+
+// ubah format jadi jam menit detik
+
+// simpan di DOM

@@ -497,7 +497,8 @@ const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
 const videos = document.querySelectorAll('[data-duration]');
 console.log(videos);
 // pilih hanya yang javascript lanjutan
-const video = document.querySelectorAll('')
+const video = document.querySelectorAll('TextContent[ JAVASCRIPT LANJUTAN ]');
+console.log(video);
 // ambil durasi masing-masing video
 
 // ubah durasi menjadi int, ubah menit menjadi detik

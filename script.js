@@ -498,7 +498,7 @@ const videos = Array.from(document.querySelectorAll('[data-duration]'));
 // pilih hanya yang javascript lanjutan
 
 const jsLanjut = videos.filter(video => video.textContent.includes('JAVASCRIPT LANJUTAN'));
-// console.log(video);
+
 // ambil durasi masing-masing video
 
 // ubah durasi menjadi int, ubah menit menjadi detik

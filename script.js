@@ -388,14 +388,14 @@
 // const anggistwnn = new Mahasiswa();
 
 // Object Literal
-const mhs1 = {
-    nama: 'Anggi',
-    umur: 23,
-    sayHello: () => {
-        // console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun. ` );
-        console.log(this);
-    }
-}
+// const mhs1 = {
+//     nama: 'Anggi',
+//     umur: 23,
+//     sayHello: () => {
+// console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun. ` );
+// console.log(this);
+//     }
+// }
 
 // const Mahasiswa = function () {
 //     this.nama = 'Anggistwnn';
@@ -453,7 +453,7 @@ const mhs1 = {
 //     console.log('tombol ditekan!');
 // })
 
-const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
+// const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
 
 //  mencari angka >= 3
 // // for
@@ -494,11 +494,12 @@ const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
 // console.log(hasil);
 // ---------------------------------------------------------------
 // ambil semua elemen video
-const allVideos = document.querySelectorAll('[data-duration]');
-console.log(videos);
+const videos = Array.from(document.querySelectorAll('[data-duration]'));
 // pilih hanya yang javascript lanjutan
-const videoJsLanjutan = document.querySelectorAll('');
-console.log(video);
+
+const jsLanjut = videos.filter(video => video.textContent.includes('JAVASCRIPT LANJUTAN'));
+console.log(jsLanjut);
+// console.log(video);
 // ambil durasi masing-masing video
 
 // ubah durasi menjadi int, ubah menit menjadi detik

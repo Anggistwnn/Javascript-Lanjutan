@@ -497,8 +497,7 @@
 const videos = Array.from(document.querySelectorAll('[data-duration]'));
 // pilih hanya yang javascript lanjutan
 
-const jsLanjut = videos.filter(video => video.textContent.includes('JAVASCRIPT LANJUTAN'));
-console.log(jsLanjut);
+const jsLanjut = videos.filter(video => video.textContent.includes('Website Penipu'));
 // console.log(video);
 // ambil durasi masing-masing video
 
@@ -509,3 +508,4 @@ console.log(jsLanjut);
 // ubah format jadi jam menit detik
 
 // simpan di DOM
+console.log(jsLanjut);

@@ -497,12 +497,16 @@
 const videos = Array.from(document.querySelectorAll('[data-duration]'));
 // pilih hanya yang javascript lanjutan
 
-const jsLanjut = videos.filter(video => video.textContent.includes('JAVASCRIPT LANJUTAN'));
+const jsLanjut = videos.filter(video => video.textContent.includes('JAVASCRIPT LANJUTAN'))
 
-// ambil durasi masing-masing video
-
-// ubah durasi menjadi int, ubah menit menjadi detik
-
+    // ambil durasi masing-masing video
+    .map(item => item.dataset.duration)
+    // ubah durasi menjadi int, ubah menit menjadi detik
+    .map(waktu => {
+        // 10: 30[10, 30] split
+        const parts = waktu.split(':');
+        return parts;
+    })
 // jumlahkan semua detik
 
 // ubah format jadi jam menit detik

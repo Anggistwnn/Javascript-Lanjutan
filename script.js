@@ -530,3 +530,33 @@
 // const pJmlVideo = document.querySelector('.jumlah-video');
 // pJmlVideo.textContent = `${jmlVideo} Video.`
 // console.log(jmlVideo);
+
+// TEMPLATE LITERAL
+// Menggunakan backtick ``
+// Multiline string
+// console.log(`string 1
+// string 2`);
+
+// embedded expression
+
+// HTML Fragment
+const mhs = {
+    nama: 'anggistwnn',
+    umur: 33,
+    nrp: '181011400567',
+    email: 'anggistwnn@gmail.com'
+};
+
+let el = `<div class="mhs">
+<h2> ${mhs.nama}</h2>
+<span class="nrp">${mhs.nrp}</span>
+</div>`
+console.log(el);
+
+// Expression interpolation
+// let a = 10;
+// let b = 15;
+// console.log(('jika a = 10 dan b = 15, maka hasil dari penjumlahannya adalah : ' + (a + b) + ', bukan ' + (2 * a + b)));
+// menggunakan interpolation
+// console.log((`jika a = 10 dan b = 15, maka hasil dari penjumlahannya adalah : ${a+b}, bukan ${2 * a + b}`));
+// Tagged template

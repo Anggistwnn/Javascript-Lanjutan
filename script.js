@@ -529,8 +529,4 @@ pDurasi.textContent = `${jam} Jam, ${menit} Menit, ${detik} Detik.`
 const jmlVideo = videos.filter(video => video.textContent.includes('JAVASCRIPT LANJUTAN')).length;
 const pJmlVideo = document.querySelector('.jumlah-video');
 pJmlVideo.textContent = `${jmlVideo} Video.`
-
-
-
-
 console.log(jmlVideo);

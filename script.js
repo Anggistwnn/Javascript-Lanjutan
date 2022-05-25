@@ -541,10 +541,10 @@
 
 // HTML Fragment
 const mhs = {
-    nama: 'anggistwnn',
-    umur: 33,
+    nama: 'Ade Waliya',
+    umur: 23,
     nrp: '181011400567',
-    email: 'anggistwnn@gmail.com'
+    email: 'adewaliyasyganggi@gmail.com'
 };
 
 let el = `<div class="mhs">

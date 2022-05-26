@@ -540,16 +540,16 @@
 // embedded expression
 
 // HTML Fragment
-const mhs = {
-    nama: 'Ade Waliya',
+const Mahasiswa = {
+    nama: 'Roudoh',
     umur: 23,
     nrp: '181011400567',
-    email: 'adewaliyasyganggi@gmail.com'
+    email: 'roudoh@gmail.com'
 };
 
 let el = `<div class="mhs">
-<h2> ${mhs.nama}</h2>
-<span class="nrp">${mhs.nrp}</span>
+<h2> ${Mahasiswa.nama}</h2>
+<span class="nrp">${Mahasiswa.nrp}</span>
 </div>`
 console.log(el);
 

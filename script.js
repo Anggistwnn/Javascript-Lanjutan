@@ -533,14 +533,20 @@
 
 // TEMPLATE LITERAL
 // Menggunakan backtick ``
+// const nama = 'Anggi setiawan';
+// let umur = 33;
+// console.log(`halo, perkenalkan nama saya ${nama}, saya ${umur} tahun.`);
+
 // Multiline string
 // console.log(`string 1
 // string 2`);
 
 // embedded expression
-const nama = 'Anggi setiawan';
-let umur = 33;
-console.log(`halo, perkenalkan nama saya ${nama}, saya ${umur} tahun.`);
+// console.log(`${1 + 4}`);
+// console.log(`${alert('Halo')}`);
+// const z = 21;
+// console.log(`${(z % 2 == 0) ? 'genap' : 'ganjil'}`);
+
 // HTML Fragment
 // const Mahasiswa = {
 //     nama: 'Anggi Setiawan',

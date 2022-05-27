@@ -541,7 +541,7 @@
 
 // HTML Fragment
 const Mahasiswa = {
-    nama: 'Roudoh',
+    nama: 'Anggi Setiawan',
     umur: 23,
     nrp: '181011400567',
     email: 'roudoh@gmail.com'

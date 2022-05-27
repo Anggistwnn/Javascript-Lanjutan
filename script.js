@@ -565,6 +565,25 @@
 // let a = 10;
 // let b = 15;
 // console.log(('jika a = 10 dan b = 15, maka hasil dari penjumlahannya adalah : ' + (a + b) + ', bukan ' + (2 * a + b)));
+
 // menggunakan interpolation
 // console.log((`jika a = 10 dan b = 15, maka hasil dari penjumlahannya adalah : ${a+b}, bukan ${2 * a + b}`));
 // Tagged template
+// -----------------------------------------------
+// LATIHAN TEMPLATE LITERALS
+
+// 1. HTML FRAGMENT
+const Mahasiswa = {
+    nama: 'Anggi Setiawan',
+    umur: 23,
+    nim: '181011400567',
+    email: 'roudoh@gmail.com'
+};
+
+const el = `<div class="mhs">
+    <h2> ${Mahasiswa.nama}</h2>
+    <span class="nim">${Mahasiswa.nim}</span>
+    </div>`
+
+document.body.innerHTML = el;
+console.log(el);

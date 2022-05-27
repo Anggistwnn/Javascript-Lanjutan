@@ -573,17 +573,46 @@
 // LATIHAN TEMPLATE LITERALS
 
 // 1. HTML FRAGMENT
-const Mahasiswa = {
-    nama: 'Anggi Setiawan',
-    umur: 23,
-    nim: '181011400567',
-    email: 'roudoh@gmail.com'
-};
+// const Mahasiswa = {
+//     nama: 'Anggi Setiawan',
+//     umur: 23,
+//     nim: '181011400567',
+//     email: 'roudoh@gmail.com'
+// };
 
-const el = `<div class="mhs">
-    <h2> ${Mahasiswa.nama}</h2>
-    <span class="nim">${Mahasiswa.nim}</span>
-    </div>`
+// const el = `<div class="mhs">
+//     <h2> ${Mahasiswa.nama}</h2>
+//     <span class="nim">${Mahasiswa.nim}</span>
+//     </div>`
+//     console.log(el);
+
+const mhsLulus = [{
+        nama: 'Anggi Setiawan',
+        email: 'anggistwnn@gmail.com'
+    },
+    {
+        nama: 'Ade Waliya',
+        email: 'adewaliyacantiku@gmail.com'
+    },
+    {
+        nama: 'Raihani',
+        email: 'raihani@gmail.com'
+    }
+];
+
+const el =
+    `<div class="mhsLulus">
+    ${mhsLulus.map(m => `<ul>
+    <li>${m.nama}</li>
+    <li>${m.email}</li>
+</ul>`).join('') }
+    </div>`;
+
+
+
+
+
+
+
 
 document.body.innerHTML = el;
-console.log(el);

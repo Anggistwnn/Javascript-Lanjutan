@@ -209,7 +209,7 @@
 // let selamatSiang  = ucapkanSalam('Siang')
 // let selamatMalam  = ucapkanSalam('Malam')
 
-// selamatPagi('Roudoh'); Astagfirullah ini gapap kok tadi ngelaggg wwlw
+// selamatPagi('Roudoh');
 
 
 // membuat function yang mengetahui berapa kali iya diklik
@@ -548,18 +548,18 @@
 // console.log(`${(z % 2 == 0) ? 'genap' : 'ganjil'}`);
 
 // HTML Fragment
-const Mahasiswa = {
-    nama: 'Anggi Setiawan',
-    umur: 23,
-    nrp: '181011400567',
-    email: 'roudoh@gmail.com'
-};
+// const Mahasiswa = {
+//     nama: 'Anggi Setiawan',
+//     umur: 23,
+//     nrp: '181011400567',
+//     email: 'roudoh@gmail.com'
+// };
 
-let el = `<div class="mhs"></div>
-<h2> ${Mahasiswa.nama}</h2>
-<span class="nrp">${Mahasiswa.nrp}</span>
-</div>`
-console.log(el);
+// let el = `<div class="mhs"></div>
+// <h2> ${Mahasiswa.nama}</h2>
+// <span class="nrp">${Mahasiswa.nrp}</span>
+// </div>`
+// console.log(el);
 
 // Expression interpolation
 // let a = 10;

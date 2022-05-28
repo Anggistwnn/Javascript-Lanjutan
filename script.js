@@ -586,33 +586,27 @@
 //     </div>`
 //     console.log(el);
 
-const mhsLulus = [{
+const mhsPastiLulus = [{
         nama: 'Anggi Setiawan',
         email: 'anggistwnn@gmail.com'
     },
     {
-        nama: 'Ade Waliya',
-        email: 'adewaliyacantiku@gmail.com'
+        nama: 'Mulyana',
+        email: 'mulyanacantiku@gmail.com'
     },
     {
-        nama: 'Raihani',
-        email: 'raihani@gmail.com'
+        nama: 'Elna Safitri',
+        email: 'elnasafitrr@gmail.com'
     }
 ];
 
 const el =
     `<div class="mhsLulus">
-    ${mhsLulus.map(m => `<ul>
+    ${mhsPastiLulus.map(m => `<ul>
     <li>${m.nama}</li>
     <li>${m.email}</li>
 </ul>`).join('') }
     </div>`;
 
-
-
-
-
-
-
-
+console.log(el);
 document.body.innerHTML = el;

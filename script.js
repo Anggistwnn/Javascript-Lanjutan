@@ -615,18 +615,50 @@
 
 // 3.conditional
 // ternary
-const lagu = {
-    judul: 'Perempuan yang sedang dalam pelukan',
-    penyanyi: 'Payung Teduh',
-    feat: 'Pamungkas'
+// const lagu = {
+//     judul: 'Perempuan yang sedang dalam pelukan',
+//     penyanyi: 'Payung Teduh',
+//     feat: 'Pamungkas'
+// }
+
+// const el = `<div class="lagu">
+//     <ul>
+//     <li>${lagu.judul}</li>
+//     <li>${lagu.penyanyi} ${lagu.feat ?  `(feat. ${lagu.feat})` : ''}</li>
+//     </ul>
+//     </div>`
+// 4. Nested
+// HTML Fragment bersarang
+
+const mhs = {
+    nama: 'Anggi Setiawan',
+    semester: 5,
+    mataKuliah: [
+        'Pemograman Web',
+        'Komunikasi Data',
+        'Algoritma Pemograman',
+        'Logika Informatika',
+        'Struktur Data',
+    ]
+};
+
+function cetakMataKuliah(mataKuliah) {
+    return `
+    <ol>
+    ${mataKuliah.map(mk => `<li> ${mk} </li>`).join ('')}
+    </ol>
+    `
 }
 
-const el = `<div class="lagu">
-    <ul>
-    <li>${lagu.judul}</li>
-    <li>${lagu.penyanyi} ${lagu.feat ?  `(feat. ${lagu.feat})` : ''}</li>
-    </ul>
-    </div>`
+const el = `<div class="mhs">
+ <h2>${mhs.nama}</h2>
+ <span class="semester"> Semester : ${mhs.semester}</span>
+ <h4> Mata Kuliah : </h4>
+ ${cetakMataKuliah(mhs.mataKuliah)}
+
+</div>`
+
+
 
 
 

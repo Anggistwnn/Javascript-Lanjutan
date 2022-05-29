@@ -1,0 +1,8 @@
+{
+    "indentRainbow.includedLanguages": [
+    
+    ],
+    "emmet.includeLanguages": {
+        "javascript" : "html"
+    }
+}

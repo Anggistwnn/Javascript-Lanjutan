@@ -586,27 +586,49 @@
 //     </div>`
 //     console.log(el);
 
-const mhsTahunIniPastiLulus = [{
-        nama: 'Anggi Setiawan',
-        email: 'anggistwnn@gmail.com'
-    },
-    {
-        nama: 'Afwan',
-        email: 'afwan@gmail.com'
-    },
-    {
-        nama: 'Ten haag',
-        email: 'tenhaag@gmail.com'
-    }
-];
+// const mhsTahunIniPastiLulus = [{
+//         nama: 'Anggi Setiawan',
+//         email: 'anggistwnn@gmail.com'
+//     },
+//     {
+//         nama: 'Afwan',
+//         email: 'afwan@gmail.com'
+//     },
+//     {
+//         nama: 'Ten haag',
+//         email: 'tenhaag@gmail.com'
+//     }
+// ];
 
-const el =
-    `<div class="mhsLulus">
-    ${mhsTahunIniPastiLulus.map(m => `<ul>
-    <li>${m.nama}</li>
-    <li>${m.email}</li>
-</ul>`).join('') }
-    </div>`;
+// const el =
+//     `<div class="mhsLulus">
+//     ${mhsTahunIniPastiLulus.map(m => `<ul>
+//     <li>${m.nama}</li>
+//     <li>${m.email}</li>
+// </ul>`).join('') }
+//     </div>`;
+
+
+
+
+
+// 3.conditional
+// ternary
+const lagu = {
+    judul: 'Perempuan yang sedang dalam pelukan',
+    penyanyi: 'Payung Teduh'
+}
+
+const el = `<div class="lagu">
+    <ul>
+    <li>${lagu.judul}</li>
+    <li>${lagu.penyanyi}</li>
+    </ul>
+    </div>`
+
+
+
+
 
 console.log(el);
 document.body.innerHTML = el;

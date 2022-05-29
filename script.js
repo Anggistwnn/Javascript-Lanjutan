@@ -586,23 +586,23 @@
 //     </div>`
 //     console.log(el);
 
-const mhsPastiLulus = [{
+const mhsTahunIniPastiLulus = [{
         nama: 'Anggi Setiawan',
         email: 'anggistwnn@gmail.com'
     },
     {
-        nama: 'Mulyana',
-        email: 'mulyanacantiku@gmail.com'
+        nama: 'Afwan',
+        email: 'afwan@gmail.com'
     },
     {
-        nama: 'Elna Safitri',
-        email: 'elnasafitrr@gmail.com'
+        nama: 'Ten haag',
+        email: 'tenhaag@gmail.com'
     }
 ];
 
 const el =
     `<div class="mhsLulus">
-    ${mhsPastiLulus.map(m => `<ul>
+    ${mhsTahunIniPastiLulus.map(m => `<ul>
     <li>${m.nama}</li>
     <li>${m.email}</li>
 </ul>`).join('') }

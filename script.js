@@ -600,6 +600,7 @@
 //     }
 // ];
 
+// lakukan looping element
 // const el =
 //     `<div class="mhsLulus">
 //     ${mhsTahunIniPastiLulus.map(m => `<ul>
@@ -616,13 +617,14 @@
 // ternary
 const lagu = {
     judul: 'Perempuan yang sedang dalam pelukan',
-    penyanyi: 'Payung Teduh'
+    penyanyi: 'Payung Teduh',
+    feat: 'Pamungkas'
 }
 
 const el = `<div class="lagu">
     <ul>
     <li>${lagu.judul}</li>
-    <li>${lagu.penyanyi}</li>
+    <li>${lagu.penyanyi} ${lagu.feat ?  `(feat. ${lagu.feat})` : ''}</li>
     </ul>
     </div>`
 

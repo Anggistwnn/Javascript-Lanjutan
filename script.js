@@ -600,7 +600,7 @@
 //     }
 // ];
 
-// lakukan looping element
+// lakukan looping element menggunakan html fragment untuk menampilkan nyaaaa
 // const el =
 //     `<div class="mhsLulus">
 //     ${mhsTahunIniPastiLulus.map(m => `<ul>

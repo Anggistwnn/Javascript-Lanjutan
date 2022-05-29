@@ -630,34 +630,44 @@
 // 4. Nested
 // HTML Fragment bersarang
 
-const mhs = {
-    nama: 'Anggi Setiawan',
-    semester: 5,
-    mataKuliah: [
-        'Pemograman Web',
-        'Komunikasi Data',
-        'Algoritma Pemograman',
-        'Logika Informatika',
-        'Struktur Data',
-    ]
-};
+// const mhs = {
+//     nama: 'Anggi Setiawan',
+//     semester: 5,
+//     mataKuliah: [
+//         'Pemograman Web',
+//         'Komunikasi Data',
+//         'Algoritma Pemograman',
+//         'Logika Informatika',
+//         'Struktur Data',
+//     ]
+// };
+// function cetakMataKuliah(mataKuliah) {
+//     return `
+//     <ol>
+//     ${mataKuliah.map(mk => `<li> ${mk} </li>`).join ('')}
+//     </ol>
+//     `
+// }
+// const el = `<div class="mhs">
+//  <h2>${mhs.nama}</h2>
+//  <span class="semester"> Semester : ${mhs.semester}</span>
+//  <h4> Mata Kuliah : </h4>
+//  ${cetakMataKuliah(mhs.mataKuliah)}
 
-function cetakMataKuliah(mataKuliah) {
-    return `
-    <ol>
-    ${mataKuliah.map(mk => `<li> ${mk} </li>`).join ('')}
-    </ol>
-    `
+// </div>`
+
+
+// console.log(el);
+// document.body.innerHTML = el;
+
+// Tagged Templates
+const nama = 'Ade Waliya';
+const umur = 23;
+
+function coba(strings, nama, umur, email) {
+    return nama;
 }
 
-const el = `<div class="mhs">
- <h2>${mhs.nama}</h2>
- <span class="semester"> Semester : ${mhs.semester}</span>
- <h4> Mata Kuliah : </h4>
- ${cetakMataKuliah(mhs.mataKuliah)}
+const str = coba `Halo, nama istri saya ${nama}, dia berusia ${umur} tahun!`;
 
-</div>`
-
-
-console.log(el);
-document.body.innerHTML = el;
+console.log(str);

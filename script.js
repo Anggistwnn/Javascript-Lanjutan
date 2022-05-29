@@ -659,10 +659,5 @@ const el = `<div class="mhs">
 </div>`
 
 
-
-
-
-
-
 console.log(el);
 document.body.innerHTML = el;

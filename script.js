@@ -685,7 +685,7 @@ const umur = 23;
 const tanggal = '10 Januari 2025'
 
 function highlight(strings, ...values) {
-    return strings.reduce((result, str, i) => `${result}<span class="hl">${str}</span>${values[i] || ''}`, '');
+    return strings.reduce((result, str, i) => `${result}${str}<span class="hl">${values[i] || ''}</span>`, '');
 
 }
 const str = highlight `Halo, nama istri saya ${nama}, Ia berusia ${umur} tahun, Dan tanggal pernikahan kita adalah ${tanggal}`;

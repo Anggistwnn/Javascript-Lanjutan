@@ -665,13 +665,14 @@ const nama = 'Ade Waliya';
 const umur = 23;
 
 function coba(strings, ...values) {
-    let result = '';
-    strings.forEach((str, i) => {
-        result += `${str}${values[i] || ''}`
-    });
-    return result;
+    // let result = '';
+    // strings.forEach((str, i) => {
+    //     result += `${str}${values[i] || ''}`
+    // });
+    // return result;
+    return strings.reduce((result, str, i) => `${result}${str}${values[i] || ''}`, '');
 }
 
-const str = coba `Halo, nama istri saya ${nama}, dia berusia ${umur} tahun!`;
+const str = coba `Halo, nama istri saya ${nama}, Ia berusia ${umur} tahun!`;
 
 console.log(str);

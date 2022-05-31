@@ -762,16 +762,26 @@
 // console.log(values);
 // mengambil field pada obj, setelah dikirim sebagai parametert untuk funct
 
-const mhs = {
-    id: 123,
-    nama: 'Anggi',
-    umur: 23,
-    email: 'anggistwnn@gmail.com'
-};
+// const mhs = {
+//     id: 123,
+//     nama: 'Anggi',
+//     umur: 23,
+//     email: 'anggistwnn@gmail.com'
+// };
+// function getIdMhs({
+//     id,
+// }) {
+//     return id;
+// }
+// console.log(getIdMhs(mhs));
 
-function getIdMhs({
-    id,
-}) {
-    return id;
+// destructuring 
+
+function penjumlahanPerkalian(a, b) {
+    return [a + b, a * b];
 }
-console.log(getIdMhs(mhs));
+
+const jumlah = penjumlahanPerkalian(2, 3)[1];
+
+const kali = penjumlahanPerkalian(2, 3)[1];
+console.log(jumlah);

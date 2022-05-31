@@ -690,7 +690,7 @@
 // const str = highlight `Halo, nama istri saya ${nama}, Ia berusia ${umur} tahun, Dan tanggal pernikahan kita adalah ${tanggal}`;
 
 // document.body.innerHTML = str;
-
+// -------------------------------------------------------------------------------------------------------------------
 // Destructuring Assignment
 // array
 // const coba = ['satu', 'dua', 'tiga'];
@@ -700,16 +700,32 @@
 // console.log(c);
 
 // object
-const mhs = {
-    nama: 'Anggi Setiawan',
-    umur: 33,
-    email: 'anggistwnn'
-};
-const {
-    nama,
-    umur,
-    email
-} = mhs;
-console.log(nama);
-console.log(umur);
-console.log(email);
+// const mhs = {
+//     nama: 'Anggi Setiawan',
+//     umur: 33,
+//     email: 'anggistwnn'
+// };
+// const {
+//     nama,
+//     umur,
+//     email
+// } = mhs;
+// console.log(nama);
+// console.log(umur);
+// console.log(email);
+
+// const perkenalan = ['Halo', 'nama', 'saya', 'Anggi Setiawan'];
+// // skipping items
+// const [salam, , , nama] = perkenalan;
+// console.log();
+
+// swap items
+let a = 1;
+let b = 2;
+console.log(a);
+console.log(b);
+
+
+[a, b] = [b, a]
+console.log(a);
+console.log(b);

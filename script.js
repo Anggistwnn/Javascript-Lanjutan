@@ -679,15 +679,23 @@
 
 
 // highlight
+// const nama = 'Ade Waliya';
+// const umur = 23;
+// const tanggal = '10 Januari 2025'
 
-const nama = 'Ade Waliya';
-const umur = 23;
-const tanggal = '10 Januari 2025'
+// function highlight(strings, ...values) {
+//     return strings.reduce((result, str, i) => `${result}${str}<span class="hl">${values[i] || ''}</span>`, '');
 
-function highlight(strings, ...values) {
-    return strings.reduce((result, str, i) => `${result}${str}<span class="hl">${values[i] || ''}</span>`, '');
+// }
+// const str = highlight `Halo, nama istri saya ${nama}, Ia berusia ${umur} tahun, Dan tanggal pernikahan kita adalah ${tanggal}`;
 
-}
-const str = highlight `Halo, nama istri saya ${nama}, Ia berusia ${umur} tahun, Dan tanggal pernikahan kita adalah ${tanggal}`;
+// document.body.innerHTML = str;
 
-document.body.innerHTML = str;
+// Destructuring Assignment
+const coba = ['satu', 'dua', 'tiga'];
+
+const [a, b, c] = coba;
+
+console.log(a);
+console.log(b);
+console.log(c);

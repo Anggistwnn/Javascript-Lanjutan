@@ -692,10 +692,24 @@
 // document.body.innerHTML = str;
 
 // Destructuring Assignment
-const coba = ['satu', 'dua', 'tiga'];
+// array
+// const coba = ['satu', 'dua', 'tiga'];
+// const [a, b, c] = coba;
+// console.log(a);
+// console.log(b);
+// console.log(c);
 
-const [a, b, c] = coba;
-
-console.log(a);
-console.log(b);
-console.log(c);
+// object
+const mhs = {
+    nama: 'Anggi Setiawan',
+    umur: 33,
+    email: 'anggistwnn'
+};
+const {
+    nama,
+    umur,
+    email
+} = mhs;
+console.log(nama);
+console.log(umur);
+console.log(email);

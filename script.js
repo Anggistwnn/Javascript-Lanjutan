@@ -714,18 +714,58 @@
 // console.log(umur);
 // console.log(email);
 
+// Assignment tanpa deklarasi object
+// ({nama, umur} = {nama: 'Anggi', umur: 33 });
+// console.log(umur);
+
+// assignment kevariable baru 
+// const mhs = {
+//     nama: 'Anggi',
+//     umur: 23
+// };
+// const {nama : n, umur: u} = mhs;
+// console.log(u);
+
+// memberikan Default values
+
+const mhs = {
+    nama: 'Anggi',
+    umur: 23,
+};
+const {
+    nama,
+    umur,
+    email = 'anggistwnn@gmail.com'
+} = mhs;
+console.log(email);
+
 // const perkenalan = ['Halo', 'nama', 'saya', 'Anggi Setiawan'];
 // // skipping items
 // const [salam, , , nama] = perkenalan;
 // console.log();
 
 // swap items
-let a = 1;
-let b = 2;
-console.log(a);
-console.log(b);
+// let a = 1;
+// let b = 2;
+// console.log(a);
+// console.log(b);
 
 
-[a, b] = [b, a]
-console.log(a);
-console.log(b);
+// [a, b] = [b, a]
+// console.log(a);
+// console.log(b);
+
+// return value pada funct
+// function coba() {
+//     return [1, 2];
+// }
+// const [a, b] = coba();
+// console.log(b);
+
+// rest parameter
+// const [a, ...values] = [1, 2, 3, 4, 5];
+
+// console.log(a)
+// console.log(values);
+
+// distructuring obj

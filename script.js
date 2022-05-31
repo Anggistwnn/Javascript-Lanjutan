@@ -727,17 +727,29 @@
 // console.log(u);
 
 // memberikan Default values
+// const mhs = {
+//     nama: 'Anggi',
+//     umur: 23,
+// };
+// const {
+//     nama,
+//     umur,
+//     email = 'anggistwnn@gmail.com'
+// } = mhs;
+// console.log(email);
 
-const mhs = {
-    nama: 'Anggi',
-    umur: 23,
-};
-const {
-    nama,
-    umur,
-    email = 'anggistwnn@gmail.com'
-} = mhs;
-console.log(email);
+// memberi default values + assign ke variable baru
+
+// const mhs = {
+//     nama: 'Anggi',
+//     umur: 23,
+// };
+// const {
+//     nama: n,
+//     umur: u,
+//     email: e = 'anggistwnn@gmail.com'
+// } = mhs;
+// console.log(e);
 
 // const perkenalan = ['Halo', 'nama', 'saya', 'Anggi Setiawan'];
 // // skipping items
@@ -768,4 +780,27 @@ console.log(email);
 // console.log(a)
 // console.log(values);
 
-// distructuring obj
+// const mhs = {
+//     nama: 'Anggi',
+//     umur: 23,
+//     email: 'anggistwnn'
+// };
+// const { nama, ...values } = mhs;
+// console.log(values);
+
+
+// mengambil field pada obj, setelah dikirim sebagai parametert untuk funct
+
+const mhs = {
+    id: 123,
+    nama: 'Anggi',
+    umur: 23,
+    email: 'anggistwnn@gmail.com'
+};
+
+function getIdMhs({
+    id,
+}) {
+    return id;
+}
+console.log(getIdMhs(mhs));

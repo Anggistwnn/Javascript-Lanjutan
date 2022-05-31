@@ -51,11 +51,6 @@
 //  console.log(Anggi.tidur(5));
 //  Anggi
 //  console.log(Anggi.main(2));
-//  Anggi
-// console.log(Anggi.main(10));
-// Anggi
-// console.log(Anggi.tidur(30));
-// Anggi
 
 // membuat object menggunakan prototype inheriten
 // function Mahasiswa(nama, energi) {
@@ -86,10 +81,6 @@
 
 // console.log(Anggi);
 // console.log(Anggi.main(10));
-// console.log(Anggi);
-// console.log(Anggi.tidur(4));
-// console.log(Anggi);
-
 
 // 3. construction function
 // keyword new
@@ -108,9 +99,7 @@
 //         console.log(`Halo ${this.nama}, Selamat Bermain`);
 //     }
 // }
-
 // let anggi = new Mahasiswa ('anggi', 30);
-
 
 // 2.1 execution context, hosting & scope 
 
@@ -127,7 +116,6 @@
 
 // execution phase mengeksekusi programnya baris per baris
 // () kurung buka dan tutup bertanda untuk mengeksekusi code program
-
 
 // var nama = 'Anggistwnn';
 // var umur = 33;
@@ -206,11 +194,7 @@
 //  }
 
 // let selamatPagi  = ucapkanSalam('Pagi')
-// let selamatSiang  = ucapkanSalam('Siang')
-// let selamatMalam  = ucapkanSalam('Malam')
-
 // selamatPagi('Roudoh');
-
 
 // membuat function yang mengetahui berapa kali iya diklik
 // let add = (function  add() {
@@ -224,27 +208,18 @@
 
 // counter = 100;
 // console.log(add()) ;
-// console.log(add()) ;
-// console.log(add()) ;
-// console.log(add()) ;
-// console.log(add()) ;
-// console.log(add()) ;
-// console.log(add()) ;
 
 // Perbedaan antar var, let, const
-
 // let i = 10;
 // console.log(i)
 
+
 // function Test() {
-
 //     for( var i = 0; i < 10; i++){
-
 //         console.log(i);
 
 //     }
 // }
-
 // Test();
 // console.log(i);
 
@@ -274,7 +249,6 @@
 
 
 // tidak dapat mengisi array baru
-
 // const i = [1,2,3]
 // i = [1,2,3,4];
 // console.log(i);
@@ -290,7 +264,6 @@
 //     nama: "Anggi Setiawan",
 //     umur: 23
 // } 
-
 // mhs = {
 //     jurusan: "Teknik Informatika" 
 // }
@@ -787,8 +760,6 @@
 // };
 // const { nama, ...values } = mhs;
 // console.log(values);
-
-
 // mengambil field pada obj, setelah dikirim sebagai parametert untuk funct
 
 const mhs = {

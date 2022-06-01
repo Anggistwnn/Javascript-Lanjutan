@@ -870,13 +870,26 @@
 // }
 
 // Arguments
-function jumlahkanAngka() {
-    // return arguments.reduce((a, i) => a + i);
-    // [1, 2, 3].forEach(a => jumlah += a)
-    let jumlah = 0;
-    for (a of arguments) {
-        jumlah += a;
-    }
-    return jumlah;
-};
-console.log(jumlahkanAngka(1, 2, 3, 4, 5));
+// function jumlahkanAngka() {
+// return arguments.reduce((a, i) => a + i);
+// [1, 2, 3].forEach(a => jumlah += a)
+//     let jumlah = 0;
+//     for (a of arguments) {
+//         jumlah += a;
+//     }
+//     return jumlah;
+// };
+// console.log(jumlahkanAngka(1, 2, 3, 4, 5));
+
+// for .. in
+const mhs = {
+    nama: 'Anggi Setiawan',
+    umur: 23,
+    email: 'anggistwnn@gmail.com'
+}
+for (m in mhs) {
+    console.log(mhs[m]);
+    console.log(m);
+}
+// kesimpulan jika ingin mengulang isi array dan iterable obj lain gunakan for .. of
+// dan jika ingin looping properti dari obj gunakan for .. in

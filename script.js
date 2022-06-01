@@ -846,8 +846,17 @@ const mhs = ['Anggi', 'Ade Waliya', 'Raihani'];
 // }
 
 // 2. String
-const nama = 'Anggi Setiawan'
+// const nama = 'Anggi Setiawan'
 
-for (const a of nama) {
-    console.log(a);
+// for (const a of nama) {
+//     console.log(a);
+// }
+
+// mhs.forEach((m, i) => {
+//     console.log(`${m} adalah mahasiswa ke ${i + 1}`)
+// });
+
+// menggunakan for ... of
+for (const [i, m] of mhs.entries()) {
+    console.log(`${m} adalah mahasiswa ke ${i + 1}`)
 }

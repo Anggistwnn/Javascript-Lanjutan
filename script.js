@@ -862,9 +862,21 @@
 // }
 
 //NodeList
-const linama = document.querySelectorAll('.nama');
+// const linama = document.querySelectorAll('.nama');
 // console.log(linama);
 // linama.forEach(n => console.log(n.innerHTML));
-for (n of linama) {
-    console.log(n.textContent);
-}
+// for (n of linama) {
+//     console.log(n.textContent);
+// }
+
+// Arguments
+function jumlahkanAngka() {
+    // return arguments.reduce((a, i) => a + i);
+    // [1, 2, 3].forEach(a => jumlah += a)
+    let jumlah = 0;
+    for (a of arguments) {
+        jumlah += a;
+    }
+    return jumlah;
+};
+console.log(jumlahkanAngka(1, 2, 3, 4, 5));

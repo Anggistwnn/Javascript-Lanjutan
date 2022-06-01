@@ -777,11 +777,62 @@
 
 // destructuring 
 
-function penjumlahanPerkalian(a, b) {
-    return [a + b, a * b];
-}
+// function kalkulasi(a, b) {
+//     return [a + b, a - b, a * b, a / b];
+// }
 // const jumlah = penjumlahanPerkalian(2, 3)[1];
 // const kali = penjumlahanPerkalian(2, 3)[1];
-const [jumlah, kali] = penjumlahanPerkalian(2, 3);
-console.log(jumlah);
-console.log(kali);
+// const [tambah, kurang, kali, bagi = 'tidak ada'] = kalkulasi(2, 3);
+// console.log(tambah);
+// console.log(kurang);
+// console.log(kali);
+// console.log(bagi);
+
+// menggunkna obj jika ingin tidak berurutan dalam pengambilan hasil
+// jika menggunakan array seperti contoh diatas itu pemanggilan hasil harus beruurutan
+// function kalkulasi(a, b) {
+//     return {
+//         tambah: a + b,
+//         kurang: a - b,
+//         kali: a * b,
+//         bagi: a / b
+//     }
+// }
+// const {
+//     bagi,
+//     tambah,
+//     kali,
+//     kurang
+// } = kalkulasi(2, 3);
+// console.log(bagi);
+
+// destructuring function arguments
+const mhsLulusTahunIni = {
+    nama: 'Anggi Setiawan',
+    umur: 23,
+    email: 'anggistwnn@gmail.com',
+    nilai: {
+        tugas: 70,
+        uts: 80,
+        uas: 90
+    }
+}
+
+// function cetakMhs(nama, umur) {
+//     return `Halo, nama saya ${nama} saya akan lulus tahun Ini, dan saya berumur ${umur} tahun!`;
+
+// }
+
+function cetakMhs({
+    nama,
+    umur,
+    nilai: {
+        tugas,
+        uts,
+        uas
+    }
+}) {
+    return `Halo, nama saya ${nama} saya akan lulus tahun Ini, dan saya berumur ${umur} tahun!, Dan nilai UAS saya adalah ${uas}`;
+
+}
+console.log(cetakMhs(mhsLulusTahunIni));

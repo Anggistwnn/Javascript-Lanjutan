@@ -835,7 +835,7 @@
 
 // for..of
 // 1. array
-const mhs = ['Anggi', 'Ade Waliya', 'Raihani'];
+// const mhs = ['Anggi', 'Ade Waliya', 'Raihani'];
 // for (let i = 0; i < mhs.length; i++);
 // console.log(mhs);
 
@@ -857,6 +857,14 @@ const mhs = ['Anggi', 'Ade Waliya', 'Raihani'];
 // });
 
 // menggunakan for ... of
-for (const [i, m] of mhs.entries()) {
-    console.log(`${m} adalah mahasiswa ke ${i + 1}`)
+// for (const [i, m] of mhs.entries()) {
+//     console.log(`${m} adalah mahasiswa ke ${i + 1}`)
+// }
+
+//NodeList
+const linama = document.querySelectorAll('.nama');
+// console.log(linama);
+// linama.forEach(n => console.log(n.innerHTML));
+for (n of linama) {
+    console.log(n.textContent);
 }

@@ -807,32 +807,47 @@
 // console.log(bagi);
 
 // destructuring function arguments
-const mhsLulusTahunIni = {
-    nama: 'Anggi Setiawan',
-    umur: 23,
-    email: 'anggistwnn@gmail.com',
-    nilai: {
-        tugas: 70,
-        uts: 80,
-        uas: 90
-    }
-}
-
+// const mhsLulusTahunIni = {
+//     nama: 'Anggi Setiawan',
+//     umur: 23,
+//     email: 'anggistwnn@gmail.com',
+//     nilai: {
+//         tugas: 70,
+//         uts: 80,
+//         uas: 90
+//     }
+// }
 // function cetakMhs(nama, umur) {
 //     return `Halo, nama saya ${nama} saya akan lulus tahun Ini, dan saya berumur ${umur} tahun!`;
+// }
+// function cetakMhs({
+//     nama,
+//     umur,
+//     nilai: {
+//         tugas,
+//         uts,
+//         uas
+//     }
+// }) {
+//     return `Halo, nama saya ${nama} saya akan lulus tahun Ini, dan saya berumur ${umur} tahun!, Dan nilai UAS saya adalah ${uts}`;
+// }
+// console.log(cetakMhs(mhsLulusTahunIni));
 
+// for..of
+// 1. array
+const mhs = ['Anggi', 'Ade Waliya', 'Raihani'];
+// for (let i = 0; i < mhs.length; i++);
+// console.log(mhs);
+
+// mhs.forEach(m => console.log(m));
+
+// for ( const a of mhs ){
+//     console.log(a);
 // }
 
-function cetakMhs({
-    nama,
-    umur,
-    nilai: {
-        tugas,
-        uts,
-        uas
-    }
-}) {
-    return `Halo, nama saya ${nama} saya akan lulus tahun Ini, dan saya berumur ${umur} tahun!, Dan nilai UAS saya adalah ${uas}`;
+// 2. String
+const nama = 'Anggi Setiawan'
 
+for (const a of nama) {
+    console.log(a);
 }
-console.log(cetakMhs(mhsLulusTahunIni));

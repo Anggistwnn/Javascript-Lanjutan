@@ -882,14 +882,21 @@
 // console.log(jumlahkanAngka(1, 2, 3, 4, 5));
 
 // for .. in
-const mhs = {
-    nama: 'Anggi Setiawan',
-    umur: 23,
-    email: 'anggistwnn@gmail.com'
-}
-for (m in mhs) {
-    console.log(mhs[m]);
-    console.log(m);
-}
+// const mhs = {
+//     nama: 'Anggi Setiawan',
+//     umur: 23,
+//     email: 'anggistwnn@gmail.com'
+// }
+// for (m in mhs) {
+//     console.log(mhs[m]);
+//     console.log(m);
+// }
 // kesimpulan jika ingin mengulang isi array dan iterable obj lain gunakan for .. of
 // dan jika ingin looping properti dari obj gunakan for .. in
+// ---------------------------------------------------------------------
+// Spread Operator 
+const mhs = ['Anggi', 'Ade Waliya', 'Raihani'];
+console.log(...mhs[1]);
+// untuk menggabungkan 2 Arr
+
+// dan Rest parameter

@@ -895,8 +895,14 @@
 // dan jika ingin looping properti dari obj gunakan for .. in
 // ---------------------------------------------------------------------
 // Spread Operator 
-const mhs = ['Anggi', 'Roudoh', 'Raihani'];
-console.log(...mhs[1]);
+
+for (let i = 1; i < 5; i++) {
+    if (i === 3) continue;
+    console.log(i);
+}
+
+// const mhs = ['Anggi', 'Roudoh', 'Raihani'];
+// console.log(...mhs[1]);
 // untuk menggabungkan 2 Arr
 
 // dan Rest parameter

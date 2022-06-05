@@ -902,8 +902,18 @@
 // ---------------------------------------------------------------------
 // Spread Operator 
 
-const mhs = ['Ade Waliyaa', 'Roudoh', 'Raihani'];
-console.log(...mhs[1]);
+// console.log(...mhs[1]);
 // untuk menggabungkan 2 Arr
 
+// const mhs = ['Ade Waliyaa', 'Roudoh', 'Raihani'];
+// const dosen = ['Waluyo', 'Bagus', 'Adjis'];
+// const orang = [...mhs, ...dosen];
+// console.log(orang);
 // dan Rest parameter
+
+// Melakukan duplikat pada array
+// const mhs = ['Ade Waliyaa', 'Rosiana', 'Raihani'];
+// const mhs1 = mhs;
+// const mhs1 = [...mhs];
+// mhs1[0] = 'Adecantikkk';
+// console.log(mhs);

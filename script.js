@@ -930,8 +930,54 @@
 // const mhs = [...liMhs].map(m => m.textContent);
 // console.log(mhs);
 
-const nama = document.querySelector('.nama');
+// Implementasi dari spread 
+// const nama = document.querySelector('.nama');
+// const huruf = [...nama.textContent].map(h => `<span>${h}</span>`).join('');
+// nama.innerHTML = huruf;
 
-const huruf = [...nama.textContent].map(h => `<span>${h}</span>`).join('');
+// function Myfunc() {
+// return `a = ${a}, b = ${b}, Myargs = ${Myargs}`; 
+// return Myargs;
+// return Array.from(arguments);
+// return [...arguments]
+// }
 
-nama.innerHTML = huruf;
+// console.log(Myfunc(1, 2, 3, 4, 5));
+
+
+// function jumlahkan(...angka) {
+//     let total = 0;
+//     for(const a of angka){
+//         total += a;
+//     }
+
+//     return total;
+// }
+
+//     return angka.reduce((a, b) => a + b);
+// }
+// console.log(jumlahkan(1, 2, 3, 4, 5));
+
+// array distructuring
+// const kelompok1 = ['Anggi', 'Ade Waliya', 'Raihani', 'Dany', 'Bambang'];
+// const [ketua, wakil, ...anggota] = kelompok1;
+// console.log();
+
+// obj distructuring
+// const team = {
+//     pm: 'Anggi Setiawan',
+//     frontEnd1: 'Bambang',
+//     frontEnd2: 'Diaz',
+//     backEnd: 'Moch Dany',
+//     uiux: 'Krisna',
+//     devOps: 'Moch Rizky'
+// }
+// const {pm, ...myTeam} = team;
+// console.log(pm);
+
+// Filtering
+function filterBy(type, ...values) {
+    return values.filter(v => typeof v === type);
+}
+
+console.log(filterBy('number', 1, 2, 'Anggi Setiawan', false, 10, true, 'Doddy'));

@@ -915,5 +915,17 @@
 // const mhs = ['Ade Waliyaa', 'Rosiana', 'Raihani'];
 // const mhs1 = mhs;
 // const mhs1 = [...mhs];
-// mhs1[0] = 'Adecantikkk';
+// mhs1[0] = 'Lewandowski';
 // console.log(mhs);
+
+const liMhs = document.querySelectorAll('li');
+
+// const mhs = [];
+// for (i = 0; i < liMhs.length; i++) {
+//     mhs.push(liMhs[i].textContent);
+// }
+// console.log(mhs);
+
+// menggunakan higher order function
+const mhs = [...liMhs].map(m => m.textContent);
+console.log(mhs);

@@ -918,7 +918,7 @@
 // mhs1[0] = 'Lewandowski';
 // console.log(mhs);
 
-const liMhs = document.querySelectorAll('li');
+// const liMhs = document.querySelectorAll('li');
 
 // const mhs = [];
 // for (i = 0; i < liMhs.length; i++) {
@@ -927,5 +927,11 @@ const liMhs = document.querySelectorAll('li');
 // console.log(mhs);
 
 // menggunakan higher order function
-const mhs = [...liMhs].map(m => m.textContent);
-console.log(mhs);
+// const mhs = [...liMhs].map(m => m.textContent);
+// console.log(mhs);
+
+const nama = document.querySelector('.nama');
+
+const huruf = [...nama.textContent].map(h => `<span>${h}</span>`).join('');
+
+nama.innerHTML = huruf;

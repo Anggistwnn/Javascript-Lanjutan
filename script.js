@@ -980,4 +980,4 @@ function filterBy(type, ...values) {
     return values.filter(v => typeof v === type);
 }
 
-console.log(filterBy('number', 1, 2, 'Anggi Setiawan', false, 10, true, 'Doddy'));
+console.log(filterBy('boolean', 1, 2, 'Anggi Setiawan', false, 10, true, 'Doddy'));

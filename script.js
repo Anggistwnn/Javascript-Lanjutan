@@ -983,17 +983,60 @@
 // console.log(filterBy('number', 1, 2, 'Anggi Setiawan', false, 10, true, 'Doddy'));
 
 // how to asycronous running
-function kalikan(a, b) {
-    return a * b;
-}
+// function kalikan(a, b) {
+//     return a * b;
+// }
 
-function hitungluas(sisi) {
-    return kalikan(sisi, sisi);
-}
+// function hitungluas(sisi) {
+//     return kalikan(sisi, sisi);
+// }
 
-function cetakluaskotak(sisi) {
-    const luas = hitungluas(sisi);
-    console.log(luas);
-}
+// function cetakluaskotak(sisi) {
+//     const luas = hitungluas(sisi);
+//     console.log(luas);
+// }
 
-cetakluaskotak(5);
+// cetakluaskotak(5);
+
+// Callback
+// Synchronous callback
+// function halo(nama) {
+//     alert(`Halo, ${nama}`);
+// }
+// function tampilkanPesan(callback) {
+//     const nama = prompt(`Masukan Nama : `)
+//     callback(nama);
+// }
+// tampilkanPesan(nama => alert(`Halo, ${nama}`));
+
+const mhs = [{
+        "nama": 'Anggi Setiawan',
+        "nim": "181011400567",
+        "email": "anggistwnn@unpam.ac.id",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 1
+    },
+    {
+        "nama": 'Ade Waliya',
+        "nim": "181011403433",
+        "email": "adewaliya@unpam.ac.id",
+        "jurusan": "Akutansi",
+        "idDosenWali": 2
+    },
+    {
+        "nama": 'Raihany Naimiyah',
+        "nim": "181011401234",
+        "email": "raihani@unpam.ac.id",
+        "jurusan": "Ilmu Qur'an",
+        "idDosenWali": 3
+    },
+];
+
+console.log('mulai');
+mhs.forEach(m => {
+    for (let i = 0; i < 10000000; i++) {
+        let date = new Date();
+    };
+    console.log(m.nama)
+});
+console.log('selesai');

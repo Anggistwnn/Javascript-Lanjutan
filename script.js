@@ -976,8 +976,24 @@
 // console.log(pm);
 
 // Filtering
-function filterBy(type, ...values) {
-    return values.filter(v => typeof v === type);
+// function filterBy(type, ...values) {
+//     return values.filter(v => typeof v === type);
+// }
+
+// console.log(filterBy('number', 1, 2, 'Anggi Setiawan', false, 10, true, 'Doddy'));
+
+// how to asycronous running
+function kalikan(a, b) {
+    return a * b;
 }
 
-console.log(filterBy('number', 1, 2, 'Anggi Setiawan', false, 10, true, 'Doddy'));
+function hitungluas(sisi) {
+    return kalikan(sisi, sisi);
+}
+
+function cetakluaskotak(sisi) {
+    const luas = hitungluas(sisi);
+    console.log(luas);
+}
+
+cetakluaskotak(5);

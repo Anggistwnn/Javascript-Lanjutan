@@ -1009,34 +1009,58 @@
 // }
 // tampilkanPesan(nama => alert(`Halo, ${nama}`));
 
-const mhs = [{
-        "nama": 'Anggi Setiawan',
-        "nim": "181011400567",
-        "email": "anggistwnn@unpam.ac.id",
-        "jurusan": "Teknik Informatika",
-        "idDosenWali": 1
-    },
-    {
-        "nama": 'Ade Waliya',
-        "nim": "181011403433",
-        "email": "adewaliya@unpam.ac.id",
-        "jurusan": "Akutansi",
-        "idDosenWali": 2
-    },
-    {
-        "nama": 'Raihany Naimiyah',
-        "nim": "181011401234",
-        "email": "raihani@unpam.ac.id",
-        "jurusan": "Ilmu Qur'an",
-        "idDosenWali": 3
-    },
-];
+// const mhs = [{
+//         "nama": 'Anggi Setiawan',
+//         "nim": "181011400567",
+//         "email": "anggistwnn@unpam.ac.id",
+//         "jurusan": "Teknik Informatika",
+//         "idDosenWali": 1
+//     },
+//     {
+//         "nama": 'Ade Waliya',
+//         "nim": "181011403433",
+//         "email": "adewaliya@unpam.ac.id",
+//         "jurusan": "Akutansi",
+//         "idDosenWali": 2
+//     },
+//     {
+//         "nama": 'Raihany Naimiyah',
+//         "nim": "181011401234",
+//         "email": "raihani@unpam.ac.id",
+//         "jurusan": "Ilmu Qur'an",
+//         "idDosenWali": 3
+//     },
+// ];
 
-console.log('mulai');
-mhs.forEach(m => {
-    for (let i = 0; i < 10000000; i++) {
-        let date = new Date();
-    };
-    console.log(m.nama)
-});
-console.log('selesai');
+// console.log('mulai');
+// mhs.forEach(m => {
+//     for (let i = 0; i < 10000000; i++) {
+//         let date = new Date();
+//     };
+//     console.log(m.nama)
+// });
+// console.log('selesai');
+
+// Asynchronous Callback
+
+function getDataMahasiswa(url, success, error) {
+    let xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                success(xhr.response);
+            } else if (xhr.status === 404) {
+                error();
+            }
+        }
+    }
+    xhr.open('get', url);
+    xhr.send();
+}
+
+getDataMahasiswa('data/mahasiswa.json', results => {
+    console.log(results);
+}, () => {
+
+})

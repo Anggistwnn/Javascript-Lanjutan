@@ -1066,7 +1066,7 @@ getDataMahasiswa('data/mahasiswa.json', results => {
 })
 
 // JQuery
-console.log('mulai');
+console.log('awal');
 $.ajax({
     url: 'mahasiswa.json',
     success: (mhs) => {
@@ -1076,4 +1076,4 @@ $.ajax({
         console.log(e.responseText);
     }
 });
-console.log('selesai');
+console.log('akhir');

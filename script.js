@@ -1043,37 +1043,146 @@
 
 // Asynchronous Callback
 
-function getDataMahasiswa(url, success, error) {
-    let xhr = new XMLHttpRequest();
+// function getDataMahasiswa(url, success, error) {
+//     let xhr = new XMLHttpRequest();
 
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                success(xhr.response);
-            } else if (xhr.status === 404) {
-                error();
-            }
-        }
-    }
-    xhr.open('get', url);
-    xhr.send();
-}
+//     xhr.onreadystatechange = function () {
+//         if (xhr.readyState === 4) {
+//             if (xhr.status === 200) {
+//                 success(xhr.response);
+//             } else if (xhr.status === 404) {
+//                 error();
+//             }
+//         }
+//     }
+//     xhr.open('get', url);
+//     xhr.send();
+// }
 
-getDataMahasiswa('data/mahasiswa.json', results => {
-    console.log(results);
-}, () => {
+// getDataMahasiswa('data/mahasiswa.json', results => {
+//     console.log(results);
+// }, () => {
 
-})
+// })
 
 // JQuery
-console.log('awal');
-$.ajax({
-    url: 'mahasiswa.json',
-    success: (mhs) => {
-        mhs.forEach(m => console.log(m.nama));
-    },
-    error: (e) => {
-        console.log(e.responseText);
-    }
-});
-console.log('akhir');
+// console.log('awal');
+// $.ajax({
+//     url: 'mahasiswa.json',
+//     success: (mhs) => {
+//         mhs.forEach(m => console.log(m.nama));
+//     },
+//     error: (e) => {
+//         console.log(e.responseText);
+//     }
+// });
+// console.log('akhir');
+
+// $.ajax({
+//     url: 'mahasiswa.json',
+//     success: movies => console.log(movies)
+// });
+
+// menggunakan JQuery
+// $.ajax({
+//     url: 'http://www.omdbapi.com/?apikey=21cf67eb&s=avatar',
+//     success: movies => console.log(movies)
+// })
+
+// menggunakan vanilla javascript
+// const xhr = new XMLHttpRequest();
+// xhr.onreadystatechange = function () {
+//     if (xhr.status === 200) {
+//         if (xhr.readyState === 4) {
+//             console.log(JSON.parse(xhr.response));
+//         }
+//     } else {
+//         console.log(xhr.responseText);
+//     }
+// }
+// xhr.open('get', 'http://www.omdbapi.com/?apikey=21cf67eb&s=avatar')
+// xhr.send();  
+
+// fetch('http://www.omdbapi.com/?apikey=21cf67eb&s=avatar')
+//     .then(response => response.json())
+//     .then(response => console.log(response));
+
+// Promies
+// Obj yang merepresentasikan keberhasilan atau kegagalan sebuah event yang asynchronous dimasa yang akan datang
+// janji (terpenuhi/ingkar)
+// state (fulfilled/rejected/pending)
+// callback (resolve/reject/finally)
+// aksi (then/catch)
+
+// Contoh 1
+// let ditepati = true;
+// const janji1 = new Promise((resolve, reject) => {
+//     if (ditepati) {
+//         resolve('Janji Telah Ditepati');
+//     } else {
+//         reject('Ingkar Janji ...');
+//     }
+// });
+
+// janji1
+//     .then(response => console.log('OK! : ' + response))
+//     .catch(response => console.log('NOT OK! : ' + response));
+
+// Contoh 2
+// let ditepati = true;
+// const janji2 = new Promise((resolve, reject) => {
+//     if (ditepati) {
+//         setTimeout(() => {
+//             resolve('Ditepati setelah beberapa waktu!')
+//         }, 2000);
+//     } else {
+//         setTimeout(() => {
+//             resolve('Tidak ditepati setelah beberapa waktu!')
+//         }, 2000);
+//     }
+// });
+
+// console.log('mulai');
+// janji2
+//     .finally(() => console.log('selesai menunggu'))
+//     .then(response => console.log('OK! : ' + response))
+//     .catch(response => console.log('NOT OK! : ' + response));
+// console.log(janji2
+//     .then(() => {
+//         console.log(janji2);
+//     }));
+// console.log('selesai');
+
+// Contoh 3
+
+// const film = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve([{
+//             judul: 'Adikmu Adalah Istriku',
+//             sutradara: 'Manoj Pundjabi',
+//             pemeran: 'Reza Sahadian, Cinta Lautan'
+//         }]);
+//     }, 1000);
+// });
+
+// const cuaca = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve([{
+//             kota: 'Tangerang Selatan',
+//             temp: 21,
+//             kondisi: 'Gerimis Kecil '
+//         }]);
+//     }, 2000);
+// });
+
+// film.then(response => console.log(response));
+// cuaca.then(response => console.log(response));
+
+// menggunakan promise.all
+// Promise.all([film, cuaca])
+//     // .then(response => console.log(response));
+//     .then(response => {
+//         const [film, cuaca] = response;
+//         console.log(film);
+//         console.log(cuaca);
+//     })

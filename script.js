@@ -1186,3 +1186,40 @@
 //         console.log(film);
 //         console.log(cuaca);
 //     })
+
+// const cobain = new Promise(resolve => {
+//     setTimeout(() => {
+//         resolve('selesai')
+//     }, 2000);
+// });
+// // console.log(cobain);
+// cobain
+//     .then(() => console.log(cobain));
+
+function cobaPromise() {
+    return new Promise((resolve, reject) => {
+        const waktu = 1000;
+        if (waktu < 5000) {
+            setTimeout(() => {
+                resolve('selesai')
+            }, waktu);
+        } else {
+            reject('Kelamaan masnyaa!!')
+        }
+    })
+}
+// const coba = cobaPromise();
+// coba
+//     .then(() => console.log(coba))
+//     .catch(() => console.log(coba));
+
+async function cobaAsync() {
+    try {
+        const coba = await cobaPromise();
+        console.log(coba);
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+cobaAsync();

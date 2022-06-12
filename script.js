@@ -1205,9 +1205,9 @@ function cobaPromise() {
             }, waktu);
         } else {
             reject('Kelamaan masnyaa!!')
-        }
-    })
-}
+        };
+    });
+};
 // const coba = cobaPromise();
 // coba
 //     .then(() => console.log(coba))
@@ -1219,7 +1219,7 @@ async function cobaAsync() {
         console.log(coba);
     } catch (err) {
         console.log(err);
-    }
-}
+    };
+};
 
 cobaAsync();

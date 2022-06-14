@@ -1217,8 +1217,8 @@ async function cobaAsync() {
     try {
         const coba = await cobaPromise();
         console.log(coba);
-    } catch (err) {
-        console.log(err);
+    } catch (log) {
+        console.log(log);
     };
 };
 

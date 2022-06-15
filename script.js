@@ -1115,18 +1115,18 @@
 // aksi (then/catch)
 
 // Contoh 1
-// let ditepati = true;
-// const janji1 = new Promise((resolve, reject) => {
-//     if (ditepati) {
-//         resolve('Janji Telah Ditepati');
-//     } else {
-//         reject('Ingkar Janji ...');
-//     }
-// });
+let menepati = true;
+const janji1 = new Promise((resolve, reject) => {
+    if (menepati) {
+        resolve('Janji Telah Ditepati');
+    } else {
+        reject('Ingkar Janji ...');
+    }
+});
 
-// janji1
-//     .then(response => console.log('OK! : ' + response))
-//     .catch(response => console.log('NOT OK! : ' + response));
+janji1
+    .then(response => console.log('OK! : ' + response))
+    .catch(response => console.log('NOT OK! : ' + response));
 
 // Contoh 2
 // let ditepati = true;

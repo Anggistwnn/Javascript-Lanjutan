@@ -1115,18 +1115,18 @@
 // aksi (then/catch)
 
 // Contoh 1
-let menepati = true;
-const janji1 = new Promise((resolve, reject) => {
-    if (menepati) {
-        resolve('Janji Telah Ditepati');
-    } else {
-        reject('Ingkar Janji ...');
-    }
-});
+// let menepati = true;
+// const janji1 = new Promise((resolve, reject) => {
+//     if (menepati) {
+//         resolve('Janji Telah Ditepati');
+//     } else {
+//         reject('Ingkar Janji ...');
+//     }
+// });
 
-janji1
-    .then(response => console.log('OK! : ' + response))
-    .catch(response => console.log('NOT OK! : ' + response));
+// janji1
+//     .then(response => console.log('OK! : ' + response))
+//     .catch(response => console.log('NOT OK! : ' + response));
 
 // Contoh 2
 // let ditepati = true;
@@ -1196,30 +1196,41 @@ janji1
 // cobain
 //     .then(() => console.log(cobain));
 
-function cobaPromise() {
-    return new Promise((resolve, reject) => {
-        const waktu = 1000;
-        if (waktu < 5000) {
-            setTimeout(() => {
-                resolve('selesai')
-            }, waktu);
-        } else {
-            reject('Kelamaan masnyaa!!')
-        };
-    });
-};
+// function cobaPromise() {
+//     return new Promise((resolve, reject) => {
+//         const waktu = 1000;
+//         if (waktu < 5000) {
+//             setTimeout(() => {
+//                 resolve('selesai')
+//             }, waktu);
+//         } else {
+//             reject('Kelamaan masnyaa!!')
+//         };
+//     });
+// };
 // const coba = cobaPromise();
 // coba
 //     .then(() => console.log(coba))
 //     .catch(() => console.log(coba));
 
-async function cobaAsync() {
-    try {
-        const coba = await cobaPromise();
-        console.log(coba);
-    } catch (log) {
-        console.log(log);
-    };
-};
+// async function cobaAsync() {
+//     try {
+//         const coba = await cobaPromise();
+//         console.log(coba);
+//     } catch (log) {
+//         console.log(log);
+//     };
+// };
 
-cobaAsync();
+// cobaAsync();
+
+function callback() {
+    console.log("Hello World!");
+
+
+}
+function buttonClick() {
+    // async
+    setInterval(callback, 2000)
+    console.log("Success Click Button!");
+}

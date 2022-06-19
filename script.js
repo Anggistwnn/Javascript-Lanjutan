@@ -1224,13 +1224,11 @@
 
 // cobaAsync();
 
-function callback() {
-    console.log("Hello World!");
-
-
+function panggiKembali() {
+    console.log("Hello Fellas");
 }
 function buttonClick() {
     // async
-    setInterval(callback, 2000)
-    console.log("Success Click Button!");
+    setInterval(panggiKembali, 2000)
+    console.log("Button it's a click!");
 }

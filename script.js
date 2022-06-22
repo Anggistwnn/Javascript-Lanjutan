@@ -1224,11 +1224,47 @@
 
 // cobaAsync();
 
-function callback() {
-    console.log("Halo, Ade:*");
+// function callback() {
+//     console.log("Halo, Ade:*");
+// }
+
+// function buttonClick() {
+//     setTimeout(callback, 2000);
+//     console.log("Button Clicky");
+// }
+
+function getProductUrl(keyword) {
+    return `https://www.blibli.com/backend/search/products?searchTerm=${keyword}`
 }
 
-function buttonClick() {
-    setTimeout(callback, 2000);
-    console.log("Button Clicky");
+function getProducts(keyword) {
+    const ajax = new XMLHttpRequest();
+    const url = getProductUrl(keyword);
+    ajax.open("GET", url );
+    ajax.send();
+    // tidak bisa dilakukan secara sync harus async
+    const response = JSON.parse(ajax.responseText);
+    console.log(response);
 }
+
+function clearProducts() {
+    const productUl = document.getElementById('products');
+    productUl.textContent = "";
+}
+
+function displayProducts(data) {
+    data.data.products.forEach(product => displayProduct(product));
+}
+
+function displayProduct(product) {
+    const productLi = document.createElement("li");
+    productLi.textContent = product.name;
+
+    const productUl = document.getElementById("products");
+    productUl.appendChild(productLi);
+}
+
+function buttonClick(){
+    getProducts(document.getElementById("keyword").value);
+}
+

@@ -1239,6 +1239,13 @@ function getProductUrl(keyword) {
 
 function getProducts(keyword) {
     const ajax = new XMLHttpRequest();
+    ajax.onload = function () {
+        const data = JSON.parse(ajax.responseText);
+        clearProducts();
+        displayProducts(data);
+    }
+
+
     const url = getProductUrl(keyword);
     ajax.open("GET", url );
     ajax.send();

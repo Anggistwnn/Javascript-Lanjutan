@@ -1240,18 +1240,26 @@ function getProductUrl(keyword) {
 function getProducts(keyword) {
     const ajax = new XMLHttpRequest();
     ajax.onload = function () {
-        const data = JSON.parse(ajax.responseText);
-        clearProducts();
-        displayProducts(data);
+
+        if(ajax.status === 200){
+            const data = JSON.parse(ajax.responseText);
+            clearProducts();
+            displayProducts(data);
+        } else {
+            getProductsError();
+        }
     }
-
-
     const url = getProductUrl(keyword);
     ajax.open("GET", url );
     ajax.send();
     // tidak bisa dilakukan secara sync harus async
     const response = JSON.parse(ajax.responseText);
     console.log(response);
+} 
+
+function getProductsError() {
+    console.log("Error get Products!");
+    alert("Error get Products!");
 }
 
 function clearProducts() {

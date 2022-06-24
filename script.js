@@ -1224,12 +1224,12 @@
 
 // cobaAsync();
 
-// function callback() {
-//     console.log("Halo, Ade:*");
+// function panggilKembali() {
+//     console.log("Halo, Roudoh:*");
 // }
 
 // function buttonClick() {
-//     setTimeout(callback, 2000);
+//     setTimeout(panggiKembali, 2000);
 //     console.log("Button Clicky");
 // }
 

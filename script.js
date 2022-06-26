@@ -1236,19 +1236,18 @@
 
 
 function getProductUrl(keyword) {
-    return `https://www.blibli.com/backend/search/product?searchTerm=${keyword}`
+    return `https://www.blibli.com/backend/search/products?searchTerm=${keyword}`
 }
 
-function getProducts(keyword) {
+function getProducts(keyword, callbackSuccess, callbackError) {
     const ajax = new XMLHttpRequest();
     ajax.onload = function () {
 
         if(ajax.status === 200){
             const data = JSON.parse(ajax.responseText);
-            clearProducts();
-            displayProducts(data);
+            callbackSuccess(data);
         } else {
-            getProductsError();
+            callbackError();
         }
     }
     const url = getProductUrl(keyword);
@@ -1276,12 +1275,45 @@ function displayProducts(data) {
 function displayProduct(product) {
     const productLi = document.createElement("li");
     productLi.textContent = product.name;
-
+ 
     const productUl = document.getElementById("products");
     productUl.appendChild(productLi);
 }
 
+function clearTableProducts() {
+    const productUl = document.getElementById("table-products");
+    productUl.textContent = "";
+}
+
+function displayTableProducts(data) {
+    const table = document.createElement("table");
+    table.setAttribute('border', 1);
+
+    let index = 0;
+    data.data.products.forEach(product => {
+        table.insertRow(index).insertCell(0).innerText = product.name;
+        index++;
+    });
+    
+    const tableProduct = document.getElementById("table-products");
+    tableProduct.appendChild(table);
+}
+
 function buttonClick(){
-    getProducts(document.getElementById("keyword").value);
+    getProducts(document.getElementById("keyword").value, function (data) {
+        clearProducts();
+        displayProducts(data);
+    }, function () {
+        getProductsError();
+    });
+
+    getProducts(document.getElementById("keyword").value, function (data) {
+        clearTableProducts();
+        displayTableProducts(data);
+    }, function () {
+        getProductsError();
+    });
+
+    console.log("Succes Click Button");
 }
 

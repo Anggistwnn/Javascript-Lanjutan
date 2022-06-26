@@ -1224,17 +1224,17 @@
 
 // cobaAsync();
 
-// function callback() {
-//     console.log("Halo, Ade:*");
-// }
+function panggiData() {
+    console.log("Halo, Ade:*");
+}
 
-// function buttonClick() {
-//     setTimeout(callback, 2000);
-//     console.log("Button Clicky");
-// }
+function buttonClick() {
+    setTimeout(panggiData, 2000);
+    console.log("Button Clicky");
+}
 
 function getProductUrl(keyword) {
-    return `https://www.blibli.com/backend/search/products?searchTerm=${keyword}`
+    return `https://www.blibli.com/backend/search/product?searchTerm=${keyword}`
 }
 
 function getProducts(keyword) {

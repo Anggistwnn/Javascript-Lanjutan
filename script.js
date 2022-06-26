@@ -1224,14 +1224,16 @@
 
 // cobaAsync();
 
-function panggiData() {
-    console.log("Halo, Ade:*");
-}
 
-function buttonClick() {
-    setTimeout(panggiData, 2000);
-    console.log("Button Clicky");
-}
+// function panggilKembali() {
+//     console.log("Halo, Roudoh:*");
+// }
+
+// function buttonClick() {
+//     setTimeout(panggiKembali, 2000);
+//     console.log("Button Clicky");
+// }
+
 
 function getProductUrl(keyword) {
     return `https://www.blibli.com/backend/search/product?searchTerm=${keyword}`

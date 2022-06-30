@@ -1300,12 +1300,19 @@ function displayTableProducts(data) {
 }
 
 function buttonClick(){
+
+    //   getProducts(document.getElementById("keyword").value, function (data) {
+    //     console.log(data);
+    // }, function () {
+    //     alert("Error");
+    // });
+
     getProducts(document.getElementById("keyword").value, function (data) {
         clearProducts();
         displayProducts(data);
     }, function () {
         getProductsError();
-    });
+    })
 
     getProducts(document.getElementById("keyword").value, function (data) {
         clearTableProducts();

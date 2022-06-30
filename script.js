@@ -1234,34 +1234,130 @@
 //     console.log("Button Clicky");
 // }
 
+// API product blibli menggunakan callback AJAX
 
+// function getProductUrl(keyword) {
+//     return `https://www.blibli.com/backend/search/products?searchTerm=${keyword}`
+// }
+
+// function getProducts(keyword, callbackSuccess, callbackError) {
+//     const ajax = new XMLHttpRequest();
+//     ajax.onload = function () {
+
+//         if(ajax.status === 200){
+//             const data = JSON.parse(ajax.responseText);
+//             callbackSuccess(data);
+//         } else {
+//             callbackError();
+//         }
+//     }
+//     const url = getProductUrl(keyword);
+//     ajax.open("GET", url );
+//     ajax.send();
+//     // tidak bisa dilakukan secara sync harus async
+//     const response = JSON.parse(ajax.responseText);
+//     console.log(response);
+// } 
+
+// function getProductsError() {
+//     console.log("Error get Products!");
+//     alert("Error get Products!");
+// }
+
+// function clearProducts() {
+//     const productUl = document.getElementById('products');
+//     productUl.textContent = "";
+// }
+
+// function displayProducts(data) {
+//     data.data.products.forEach(product => displayProduct(product));
+// }
+
+// function displayProduct(product) {
+//     const productLi = document.createElement("li");
+//     productLi.textContent = product.name;
+ 
+//     const productUl = document.getElementById("products");
+//     productUl.appendChild(productLi);
+// }
+
+// function clearTableProducts() {
+//     const productUl = document.getElementById("table-products");
+//     productUl.textContent = "";
+// }
+
+// function displayTableProducts(data) {
+//     const table = document.createElement("table");
+//     table.setAttribute('border', 1);
+
+//     let index = 0;
+//     data.data.products.forEach(product => {
+//         table.insertRow(index).insertCell(0).innerText = product.name;
+//         index++;
+//     });
+    
+//     const tableProduct = document.getElementById("table-products");
+//     tableProduct.appendChild(table);
+// }
+
+// function buttonClick(){
+
+    //   getProducts(document.getElementById("keyword").value, function (data) {
+    //     console.log(data);
+    // }, function () {
+    //     alert("Error");
+    // });
+
+//     getProducts(document.getElementById("keyword").value, function (data) {
+//         clearProducts();
+//         displayProducts(data);
+//     }, function () {
+//         getProductsError();
+//     })
+
+//     getProducts(document.getElementById("keyword").value, function (data) {
+//         clearTableProducts();
+//         displayTableProducts(data);
+//     }, function () {
+//         getProductsError();
+//     });
+
+//     console.log("Button it' s clicky");
+// }
+
+
+//  API product blibli menggunakan Promise AJAX
 function getProductUrl(keyword) {
     return `https://www.blibli.com/backend/search/products?searchTerm=${keyword}`
 }
 
-function getProducts(keyword, callbackSuccess, callbackError) {
-    const ajax = new XMLHttpRequest();
-    ajax.onload = function () {
+function getProducts(keyword) {
+    // Promise AJAX here! 
+    const promise = new Promise(function (resolve, reject) {
+        // code async
 
-        if(ajax.status === 200){
-            const data = JSON.parse(ajax.responseText);
-            callbackSuccess(data);
-        } else {
-            callbackError();
-        }
-    }
-    const url = getProductUrl(keyword);
-    ajax.open("GET", url );
-    ajax.send();
+        const ajax = new XMLHttpRequest();
+        ajax.onload = function () {
+
+            if(ajax.status === 200){
+                const data = JSON.parse(ajax.responseText);
+                resolve(data);
+            } else {
+                reject(Error("Gagal mengambil data, Pastikan internet anda stabil"));
+            }
+        };
+
+        const url = getProductUrl(keyword);
+        ajax.open("GET", url );
+        ajax.send();
+    });
+    
+    return promise;
+
     // tidak bisa dilakukan secara sync harus async
-    const response = JSON.parse(ajax.responseText);
-    console.log(response);
+    // const response = JSON.parse(ajax.responseText);
+    // console.log(response);
 } 
-
-function getProductsError() {
-    console.log("Error get Products!");
-    alert("Error get Products!");
-}
 
 function clearProducts() {
     const productUl = document.getElementById('products');
@@ -1280,47 +1376,7 @@ function displayProduct(product) {
     productUl.appendChild(productLi);
 }
 
-function clearTableProducts() {
-    const productUl = document.getElementById("table-products");
-    productUl.textContent = "";
+function buttonClick() {
+    const promise = getProducts(document.getElementById("keyword").value);
+    console.log(promise);
 }
-
-function displayTableProducts(data) {
-    const table = document.createElement("table");
-    table.setAttribute('border', 1);
-
-    let index = 0;
-    data.data.products.forEach(product => {
-        table.insertRow(index).insertCell(0).innerText = product.name;
-        index++;
-    });
-    
-    const tableProduct = document.getElementById("table-products");
-    tableProduct.appendChild(table);
-}
-
-function buttonClick(){
-
-    //   getProducts(document.getElementById("keyword").value, function (data) {
-    //     console.log(data);
-    // }, function () {
-    //     alert("Error");
-    // });
-
-    getProducts(document.getElementById("keyword").value, function (data) {
-        clearProducts();
-        displayProducts(data);
-    }, function () {
-        getProductsError();
-    })
-
-    getProducts(document.getElementById("keyword").value, function (data) {
-        clearTableProducts();
-        displayTableProducts(data);
-    }, function () {
-        getProductsError();
-    });
-
-    console.log("Button it' s clicky");
-}
-

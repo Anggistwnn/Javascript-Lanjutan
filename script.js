@@ -1314,6 +1314,6 @@ function buttonClick(){
         getProductsError();
     });
 
-    console.log("Succes Click Button");
+    console.log("Button it' s clicky");
 }
 

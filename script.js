@@ -1343,7 +1343,7 @@ function getProducts(keyword) {
                 const data = JSON.parse(ajax.responseText);
                 resolve(data);
             } else {
-                reject(Error("Gagal mengambil data, Pastikan internet anda stabil"));
+                reject(Error("Gagal mengambil data, pastikan anda terhubung dengan koneksi internet!"));
             }
         };
 

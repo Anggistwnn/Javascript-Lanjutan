@@ -1327,56 +1327,63 @@
 
 
 //  API product blibli menggunakan Promise AJAX
-function getProductUrl(keyword) {
-    return `https://www.blibli.com/backend/search/products?searchTerm=${keyword}`
-}
+// function getProductUrl(keyword) {
+//     return `https://www.blibli.com/backend/search/products?searchTerm=${keyword}`
+// }
 
-function getProducts(keyword) {
-    // Promise AJAX here! 
-    const promise = new Promise(function (resolve, reject) {
-        // code async
+// function getProducts(keyword) {
+//     // Promise AJAX here! 
+//     const promise = new Promise(function (resolve, reject) {
+//         // code async
 
-        const ajax = new XMLHttpRequest();
-        ajax.onload = function () {
+//         const ajax = new XMLHttpRequest();
+//         ajax.onload = function () {
 
-            if(ajax.status === 200){
-                const data = JSON.parse(ajax.responseText);
-                resolve(data);
-            } else {
-                reject(Error("Gagal mengambil data, pastikan anda terhubung dengan koneksi internet!"));
-            }
-        };
+//             if(ajax.status === 200){
+//                 const data = JSON.parse(ajax.responseText);
+//                 resolve(data);
+//             } else {
+//                 reject(Error("Gagal mengambil data, pastikan anda terhubung dengan koneksi internet!"));
+//             }
+//         };
 
-        const url = getProductUrl(keyword);
-        ajax.open("GET", url );
-        ajax.send();
-    });
+//         const url = getProductUrl(keyword);
+//         ajax.open("GET", url );
+//         ajax.send();
+//     });
     
-    return promise;
+//     return promise;
 
     // tidak bisa dilakukan secara sync harus async
     // const response = JSON.parse(ajax.responseText);
     // console.log(response);
-} 
+// } 
 
-function clearProducts() {
-    const productUl = document.getElementById('products');
-    productUl.textContent = "";
-}
+// function clearProducts() {
+//     const productUl = document.getElementById('products');
+//     productUl.textContent = "";
+// }
 
-function displayProducts(data) {
-    data.data.products.forEach(product => displayProduct(product));
-}
+// function displayProducts(data) {
+//     data.data.products.forEach(product => displayProduct(product));
+// }
 
-function displayProduct(product) {
-    const productLi = document.createElement("li");
-    productLi.textContent = product.name;
+// function displayProduct(product) {
+//     const productLi = document.createElement("li");
+//     productLi.textContent = product.name;
  
-    const productUl = document.getElementById("products");
-    productUl.appendChild(productLi);
+//     const productUl = document.getElementById("products");
+//     productUl.appendChild(productLi);
+// }
+
+// function buttonClick() {
+//     const promise = getProducts(document.getElementById("keyword").value);
+//     console.log(promise);
+// }
+
+function Person () {  
+    
 }
 
-function buttonClick() {
-    const promise = getProducts(document.getElementById("keyword").value);
-    console.log(promise);
-}
+const anggi = new Person();
+const roudoh = new Person();

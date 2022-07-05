@@ -1381,9 +1381,35 @@
 //     console.log(promise);
 // }
 
-function Person () {  
-    
+// PROPERTY DIDALAM CONSTRUCTOR FUNCTION
+
+// ini merupakah constructor function menggunakan parameter firstname dan lastname
+function Person ( firstName, lastName) {  
+    // menambakan property menggunakan kata kunci this.propertynya
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.sayhello = function (nama) {
+        console.info(`Hello ${nama}, my name is ${this.firstName}`);
+    }
 }
 
-const anggi = new Person();
-const roudoh = new Person();
+// ini merupakah object menggunakan parameter constructor function diatas
+const Mahasiswa1 = new Person("Anggi Setiawan" );
+
+// memanggilanya menggunakan
+//  obj.property = "isi property";
+Mahasiswa1.sayhello("Ade Waliya");
+
+
+// ini merupakah object menggunakan parameter constructor function diatas
+const Mahasiswa2 = new Person("Ade Waliya");
+
+// memanggilanya menggunakan
+//  obj.property = "isi property";
+Mahasiswa2.sayhello("Anggi Setiawan");
+
+// menampikan sebuah teks obj mahasiswa 1 pada browser
+console.log(Mahasiswa1);
+// menampilkan sebuah teks obj mahasiwa 2 pada browser
+console.log(Mahasiswa2);
+

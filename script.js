@@ -1398,11 +1398,11 @@ const Mahasiswa1 = new Person("Anggi Setiawan" );
 
 // memanggilanya menggunakan
 //  obj.property = "isi property";
-Mahasiswa1.sayhello("Ade Waliya");
+Mahasiswa1.sayhello("Roudoh");
 
 
 // ini merupakah object menggunakan parameter constructor function diatas
-const Mahasiswa2 = new Person("Ade Waliya");
+const Mahasiswa2 = new Person("Roudoh");
 
 // memanggilanya menggunakan
 //  obj.property = "isi property";

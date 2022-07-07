@@ -1388,16 +1388,30 @@ function Person ( firstName, lastName) {
     // menambakan property menggunakan kata kunci this.propertynya
     this.firstName = firstName;
     this.lastName = lastName;
+    // this.sayGoodbye = function () {
+    //     console.info("Good Bye!");
+    // }
     this.sayhello = function (nama) {
         console.info(`Hello ${nama}, my name is ${this.firstName}`);
     }
 }
 
+Person.prototype.sayBay = function () {
+    console.info("Good Bye!");
+}
+
+Person.prototype.run = function () {
+    console.info(`${this.firstName} is Running`);
+}
+
 // ini merupakah object menggunakan parameter constructor function diatas
 const Mahasiswa1 = new Person("Anggi Setiawan" );
-
-// memanggilanya menggunakan
-//  obj.property = "isi property";
+// Mahasiswa1.sayGoodbye = function () {
+    //     console.info("Good bye!");
+    // }
+    
+    // memanggilanya menggunakan
+    //  obj.property = "isi property";
 Mahasiswa1.sayhello("Roudoh");
 
 
@@ -1408,8 +1422,32 @@ const Mahasiswa2 = new Person("Roudoh");
 //  obj.property = "isi property";
 Mahasiswa2.sayhello("Anggi Setiawan");
 
-// menampikan sebuah teks obj mahasiswa 1 pada browser
+
 console.log(Mahasiswa1);
-// menampilkan sebuah teks obj mahasiwa 2 pada browser
 console.log(Mahasiswa2);
+
+// melakukan eksekusi pada function proto
+Mahasiswa1.sayBay();
+Mahasiswa1.run();
+
+// CONSTRUCTOR INHERITANCE
+// membuat function employee
+// function Employee(firstName) {
+//     this.firstName = firstName;
+//     this.sayHello = function (name) {
+//         console.info(`Hello ${name} my name is ${this.firstName}`);
+//     }
+// }
+
+// // tdk perlu melakukan copas dari employe ke manager karna akan terus melakukan pergantian jk data pada employe diperbarui cukup gunakan employe.call(obj, parameter)
+
+// // membuat function manager
+// function Manager( firstName ,lastName) {
+//     this.lastName = lastName;
+//     // untuk memanggu constructor function employe gunakan script dibawah ini
+//     Employee.call(this,  firstName);
+// }
+
+// const Anggi = new Manager("Anggi", "Setiawan")
+// console.info(Anggi);
 

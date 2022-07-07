@@ -1276,7 +1276,7 @@
 // function displayProduct(product) {
 //     const productLi = document.createElement("li");
 //     productLi.textContent = product.name;
- 
+
 //     const productUl = document.getElementById("products");
 //     productUl.appendChild(productLi);
 // }
@@ -1295,18 +1295,18 @@
 //         table.insertRow(index).insertCell(0).innerText = product.name;
 //         index++;
 //     });
-    
+
 //     const tableProduct = document.getElementById("table-products");
 //     tableProduct.appendChild(table);
 // }
 
 // function buttonClick(){
 
-    //   getProducts(document.getElementById("keyword").value, function (data) {
-    //     console.log(data);
-    // }, function () {
-    //     alert("Error");
-    // });
+//   getProducts(document.getElementById("keyword").value, function (data) {
+//     console.log(data);
+// }, function () {
+//     alert("Error");
+// });
 
 //     getProducts(document.getElementById("keyword").value, function (data) {
 //         clearProducts();
@@ -1351,12 +1351,12 @@
 //         ajax.open("GET", url );
 //         ajax.send();
 //     });
-    
+
 //     return promise;
 
-    // tidak bisa dilakukan secara sync harus async
-    // const response = JSON.parse(ajax.responseText);
-    // console.log(response);
+// tidak bisa dilakukan secara sync harus async
+// const response = JSON.parse(ajax.responseText);
+// console.log(response);
 // } 
 
 // function clearProducts() {
@@ -1371,7 +1371,7 @@
 // function displayProduct(product) {
 //     const productLi = document.createElement("li");
 //     productLi.textContent = product.name;
- 
+
 //     const productUl = document.getElementById("products");
 //     productUl.appendChild(productLi);
 // }
@@ -1385,15 +1385,15 @@
 
 // ini merupakah constructor function menggunakan parameter firstname dan lastname
 // function Person ( firstName, lastName) {  
-    // menambakan property menggunakan kata kunci this.propertynya
-    // this.firstName = firstName;
-    // this.lastName = lastName;
-    // this.sayGoodbye = function () {
-    //     console.info("Good Bye!");
-    // }
-    // this.sayhello = function (nama) {
-        // console.info(`Hello ${nama}, my name is ${this.firstName}`);
-    // }
+// menambakan property menggunakan kata kunci this.propertynya
+// this.firstName = firstName;
+// this.lastName = lastName;
+// this.sayGoodbye = function () {
+//     console.info("Good Bye!");
+// }
+// this.sayhello = function (nama) {
+// console.info(`Hello ${nama}, my name is ${this.firstName}`);
+// }
 // }
 
 // Person.prototype.sayBay = function () {
@@ -1407,11 +1407,11 @@
 // ini merupakah object menggunakan parameter constructor function diatas
 // const Mahasiswa1 = new Person("Anggi Setiawan" );
 // Mahasiswa1.sayGoodbye = function () {
-    //     console.info("Good bye!");
-    // }
-    
-    // memanggilanya menggunakan
-    //  obj.property = "isi property";
+//     console.info("Good bye!");
+// }
+
+// memanggilanya menggunakan
+//  obj.property = "isi property";
 // Mahasiswa1.sayhello("Roudoh");
 
 
@@ -1478,6 +1478,22 @@
 
 // console.info(employee);
 // console.info(manager);
+
+// Constructor fucntion
+
+class Mahasiswa {
+
+    constructor(name) {
+        this.name = name;
+    }
+
+}
+const Anggi = new Mahasiswa("Anggi")
+console.info(Anggi);
+console.info(Anggi.name);
+
+const Ade = new Mahasiswa("Ade")
+
 
 
 

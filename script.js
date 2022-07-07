@@ -1384,51 +1384,51 @@
 // PROPERTY DIDALAM CONSTRUCTOR FUNCTION
 
 // ini merupakah constructor function menggunakan parameter firstname dan lastname
-function Person ( firstName, lastName) {  
+// function Person ( firstName, lastName) {  
     // menambakan property menggunakan kata kunci this.propertynya
-    this.firstName = firstName;
-    this.lastName = lastName;
+    // this.firstName = firstName;
+    // this.lastName = lastName;
     // this.sayGoodbye = function () {
     //     console.info("Good Bye!");
     // }
-    this.sayhello = function (nama) {
-        console.info(`Hello ${nama}, my name is ${this.firstName}`);
-    }
-}
+    // this.sayhello = function (nama) {
+        // console.info(`Hello ${nama}, my name is ${this.firstName}`);
+    // }
+// }
 
-Person.prototype.sayBay = function () {
-    console.info("Good Bye!");
-}
+// Person.prototype.sayBay = function () {
+//     console.info("Good Bye!");
+// }
 
-Person.prototype.run = function () {
-    console.info(`${this.firstName} is Running`);
-}
+// Person.prototype.run = function () {
+//     console.info(`${this.firstName} is Running`);
+// }
 
 // ini merupakah object menggunakan parameter constructor function diatas
-const Mahasiswa1 = new Person("Anggi Setiawan" );
+// const Mahasiswa1 = new Person("Anggi Setiawan" );
 // Mahasiswa1.sayGoodbye = function () {
     //     console.info("Good bye!");
     // }
     
     // memanggilanya menggunakan
     //  obj.property = "isi property";
-Mahasiswa1.sayhello("Roudoh");
+// Mahasiswa1.sayhello("Roudoh");
 
 
 // ini merupakah object menggunakan parameter constructor function diatas
-const Mahasiswa2 = new Person("Roudoh");
+// const Mahasiswa2 = new Person("Roudoh");
 
 // memanggilanya menggunakan
 //  obj.property = "isi property";
-Mahasiswa2.sayhello("Anggi Setiawan");
+// Mahasiswa2.sayhello("Anggi Setiawan");
 
 
-console.log(Mahasiswa1);
-console.log(Mahasiswa2);
+// console.log(Mahasiswa1);
+// console.log(Mahasiswa2);
 
 // melakukan eksekusi pada function proto
-Mahasiswa1.sayBay();
-Mahasiswa1.run();
+// Mahasiswa1.sayBay();
+// Mahasiswa1.run();
 
 // CONSTRUCTOR INHERITANCE
 // membuat function employee
@@ -1450,4 +1450,35 @@ Mahasiswa1.run();
 
 // const Anggi = new Manager("Anggi", "Setiawan")
 // console.info(Anggi);
+
+// PROTOTYPE INHERITANCE 
+
+// function Employee(name) {
+//     this.name = name;
+// }
+
+// function Manager(name) {
+//     this.name = name;
+// }
+
+// Manager.prototype = Object.create(Employee.prototype);
+
+// Employee.prototype.sayHello = function (name) {
+//     console.info(`Hello ${name}, My name is Manager ${this.name}`)
+// }
+// Manager.prototype.sayHello = function (name) {
+//     console.info(`Hello ${name}, My name is Employee ${this.name}`)
+// }
+
+// const employee = new Employee("Anggi")
+// employee.sayHello("Ade Waliya");
+
+// const manager = new Manager("Roudoh")
+// manager.sayHello("Ade Waliya");
+
+// console.info(employee);
+// console.info(manager);
+
+
+
 

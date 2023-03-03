@@ -39,4 +39,4 @@ function perhitungan(a, b) {
 }
 
 const result = perhitungan(40, 20);
-result
+result;
